@@ -1,41 +1,90 @@
 <html>
   <head>
     <title>Portfolio | Wajiha</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Material Design Lite -->
+ <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-lime.min.css">
+ <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+   <!-- Font Awesome -->
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   <!-- Custom Styles -->
+   <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <header>
+     <header class="mdl-layout__header mdl-layout__header--transparent">
      <h1>Wajiha</h1>
      <p class="slogan">UX designer from the Bay Area</p>
    </header>
-   <main>
-      <div class="project featured-project">
-        <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-        <h2>Featured Project Name</h2>
-        <p>Project description text</p>
-      </div>
-      <div class="project">
-        <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="project screenshot"/>
-        <h2>Project Name</h2>
-        <p>Project description text</p>
-      </div>
-      <div class="project">
-        <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="project screenshot"/>
-        <h2>Project Name</h2>
-        <p>Project description text</p>
-      </div>
-      <div class="project">
-        <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="project screenshot"/>
-        <h2>Project Name</h2>
-        <p>Project description text</p>
-      </div>
+      <main class="mdl-layout__content mdl-grid">
+        <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+            <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
+               <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
+             </div>
+             <div class="mdl-cell mdl-cell--7-col">
+               <h2 class="mdl-card__title-text">Featured Project Name</h2>
+               <p class="project-description mdl-card__supporting-text">Project description text</p>
+             </div>
+           </div>
+           <div class="project mdl-cell mdl-card mdl-shadow--4dp">
+                 <div>
+                   <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="project screenshot"/>
+                 </div>
+                 <div class="mdl-card__title">
+                   <h2 class="mdl-card__title-text">Project Name</h2>
+                 </div>
+                 <div class="mdl-card__supporting-text">Project description text</div>
+               </div>
+
+               <div class="project mdl-cell mdl-card mdl-shadow--4dp">
+                 <div>
+                   <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="project screenshot"/>
+                 </div>
+                 <div class="mdl-card__title">
+                   <h2 class="mdl-card__title-text">Project Name</h2>
+                 </div>
+                 <div class="mdl-card__supporting-text">Project description text</div>
+               </div>
+
+               <div class="project mdl-cell mdl-card mdl-shadow--4dp">
+                 <div>
+                   <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="project screenshot"/>
+                 </div>
+                 <div class="mdl-card__title">
+                   <h2 class="mdl-card__title-text">Project Name</h2>
+                 </div>
+                 <div class="mdl-card__supporting-text">Project description text</div>
+               </div>
+
     </main>
-    <footer>
-    <ul>
-      <li> <a href="{https://www.linkedin.com/in/wajihaalmas/}">LinkedIn</a> </li>
-      <li> <a href="{https://github.com/wajiha04}">GitHub</a> </li>
-      <li> <a href="{Your Facebook Profile URL}">Facebook</a> </li>
-      <li> <a href="{https://twitter.com/WajihaAlmas}">Twitter</a> </li>
-      <li> <a href="mailto:{wajiha.ahmed04@gmail.com}">Email</a> </li>
+    <footer class="mdl-mini-footer">
+           <ul class="mdl-mini-footer__link-list">
+
+             <li>
+                   <a href="{Your LinkedIn URL}">
+                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                   </a>
+                 </li>
+                 <li>
+                   <a href="{Your GitHub Profile URL}">
+                     <i class="fa fa-github-square" aria-hidden="true"></i>
+                   </a>
+                 </li>
+                 <li>
+                   <a href="{Your Facebook Profile URL}">
+                     <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                   </a>
+                 </li>
+                 <li>
+                   <a href="{Your Twitter URL}">
+                     <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                   </a>
+                 </li>
+                 <li>
+                   <a href="mailto:{Your email address}">
+                     <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                   </a>
+                 </li>
     </ul>
   </footer>
   </body>
