@@ -1,91 +1,120 @@
-<html>
-  <head>
-    <title>Portfolio | Wajiha</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Material Design Lite -->
- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-lime.min.css">
- <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Wajiha Ahmed</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body id="background">
+  <header>
+    <div class="container">
+      <!-- top navbar -->
+      <nav>
+        <ul>
+          <li><a href="contact.html"  >Contact</a></li>
+          <li><a href="#resueme">Resume</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li class="current"><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- hero unit -->
+  <main>
+    <section id="name" >
+      <div class="container">
+        <div class="logo" ></div>
+        <h1>Hi! I'm
+          <span class="strong" style= "color: #BA9344;" </span> Wajiha <br>
+            <!-- <span id="brackets">[ Wa-G-ha ] -->
+          </h1>
+          <h4 class="slogan" id= "intro">
+            <span class="strong" style= "color: #3B7D7C;" </span>  A User Experience Designer  <br>
+            </h4>
+            <h4>
+              based in San Francisco, Bay Area <br>
+              I design user friendly digital experience.
+            </h4>
+            <i class="fas fa-chevron-down" style="font-size:40px;  padding-right: 500px;padding-left:500px; padding-top: 100px;" ></i>
+          </div>
+        </section>
+      </main>
+      <!-- project showcase -->
+      <section id="project">
+        <div class="container">
+          <h2>My Featured Project </h2>
+          <!-- <p class="mainproject" ></p> -->
+          <div class="box">
+            <h1> Healthy Portions </h1>
+            <h4>
+              <span class="strong" style= "color: #BA9344;" </span>  User Experience Design & Branding  <br>
+              </h4>
+              <p> Healthy Portions is the ultimate recipe <br>manager and cloud storage platform to <br> provide a user experience that fits the <br> needs of users to organized their <br> healthy inspirations.</p>
+              <a href="project.html"><button type="submite" class="button_1">View Case Study</button></a>
+            </div>
+          </section>
+          <!-- my design Approach -->
+          <section id="Design-box">
+            <div class="container">
+              <h2> My Design Approach </h2>
+              <div class="box1">
+                <h3 class="button_2"> Empathy & Ideate</h3>
+                <p>I believe in to gain an empathic understanding of the problem, empathy allows me to set aside my own assumptions and creating many ideas in ideation sessions. I like to "think outside the box" to identify new solutions to the problem statement.</p>
+              </div>
+            </div>
+          </section>
+          <section id="Design-box2">
+            <div class="container">
+              <div class="box2">
+                <h3 class="button_3"> Innovate & Data Driven</h3>
+                <p> Identify opportunities to innovate - User research and prototyping insights help me generate ideas. This is where the design really comes to life.  My goal is to make design better than before and for an enjoyable experience. I observe and understand the specific condition in which the solution will be used.</p>
+              </div>
+            </div>
+          </section>
+          <!-- footer -->
+          <footer>
+            <section class="footer">
+              <div class="container">
+                <h2 class="diff"> Let's connect!</h2>
+                <h4  class="difference">
+                  Thank you for stopping by, I hope you enjoyed my work. <br>
+                  Feel free to connect with me.
+                </h4>
+                <ul class="center contact-icons">
+                  <li>
+                    <a href="https://twitter.com/Wajihaalmas"
+                    class="fab fa-twitter" style="font-size:35px;padding-right: 22px;padding-left:10px;  text-decoration:none;"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/wajihaalmas/"
+                    class="fab fa-linkedin"style="font-size:35px;padding-right: 22px;padding-left:10px; "></a>
+                  </li>
 
-   <!-- Font Awesome -->
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-   <!-- Custom Styles -->
-   <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body>
-     <header class="mdl-layout__header mdl-layout__header--transparent">
-     <h1>Wajiha</h1>
-     <p class="slogan">UX designer from the Bay Area</p>
-   </header>
-      <main class="mdl-layout__content mdl-grid">
-        <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-            <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
-               <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-             </div>
-             <div class="mdl-cell mdl-cell--7-col">
-               <h2 class="mdl-card__title-text">Featured Project Name</h2>
-               <p class="project-description mdl-card__supporting-text">Project description text</p>
-             </div>
-           </div>
-           <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-                 <div>
-                   <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="project screenshot"/>
-                 </div>
-                 <div class="mdl-card__title">
-                   <h2 class="mdl-card__title-text">Project Name</h2>
-                 </div>
-                 <div class="mdl-card__supporting-text">Project description text</div>
-               </div>
+                  <li>
+                    <a href="https://github.com/wajiha04"
+                    class="fab fa-github"style="font-size:35px;padding-right: 22px;padding-left:10px;text-decoration:none;"></a>
+                  </li>
+                  <li>
+                    <a href="mailto:wajiha.ahmed04@gmail.com"
+                    class="fas fa-envelope"style="font-size:35px;padding-right: 22px;padding-left:10px; text-decoration:none;"></a>
+                  </li>
 
-               <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-                 <div>
-                   <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="project screenshot"/>
-                 </div>
-                 <div class="mdl-card__title">
-                   <h2 class="mdl-card__title-text">Project Name</h2>
-                 </div>
-                 <div class="mdl-card__supporting-text">Project description text</div>
-               </div>
+                  <li>
+                    <a href="resume.html"
+                    class="fas fa-briefcase"style="font-size:35px;padding-right: 22px;padding-left:10px;text-decoration:none;"></a>
+                  </li>
+                </ul>
+                <hr align="left" width="100%"padding-top= "2.5rem">
+                <p class="copyright"> &copy; 2019 Wajiha Ahmed | designed & developed by Wajiha Ahmed</p>
+              </div>
 
-               <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-                 <div>
-                   <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="project screenshot"/>
-                 </div>
-                 <div class="mdl-card__title">
-                   <h2 class="mdl-card__title-text">Project Name</h2>
-                 </div>
-                 <div class="mdl-card__supporting-text">Project description text</div>
-               </div>
-
-    </main>
-    <footer class="mdl-mini-footer">
-           <ul class="mdl-mini-footer__link-list">
-
-             <li>
-                   <a href="{Your LinkedIn URL}">
-                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                   </a>
-                 </li>
-                 <li>
-                   <a href="{Your GitHub Profile URL}">
-                     <i class="fa fa-github-square" aria-hidden="true"></i>
-                   </a>
-                 </li>
-                 <li>
-                   <a href="{Your Facebook Profile URL}">
-                     <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                   </a>
-                 </li>
-                 <li>
-                   <a href="{Your Twitter URL}">
-                     <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                   </a>
-                 </li>
-                 <li>
-                   <a href="mailto:{Your email address}">
-                     <i class="fa fa-envelope-square" aria-hidden="true"></i>
-                   </a>
-                 </li>
-    </ul>
-  </footer>
-  </body>
-</html>
+            </section>
+          </footer>
+        </body>
+        </html>
