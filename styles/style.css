@@ -175,6 +175,13 @@ main {
   margin-left: 5%;
   width: 35%;
 }
+  #hide-sm {
+    font-size:40px;
+     padding-right: 500px;
+     padding-left:500px;
+      padding-top: 100px;
+  }
+  /* for design box */
 #Design-box .box1{
   float: right;
   margin-top: 40px;
@@ -183,22 +190,27 @@ main {
   height: 270px;
   padding: 30px;
   font-size: 18px;
-  margin-right:  10%;
-}
-/* for design box */
-#Design-box{
-  background-image: url("../images/empathy.png");
-  background-repeat: no-repeat;
-  height:400px;
-  background-repeat: no-repeat;
-  background-position: left 25% bottom 20% ;
+  margin-right: 10%;
 }
 
+#Design-box{
+  height:400px;
+}
+.empathy {
+  position: absolute;
+  left: 250px;
+  top: 1380px;
+  z-index: -1;
+
+}
+.innovate{
+  position: absolute;
+  right: 330px;
+  top: 1750px;
+  z-index: -1;
+}
 #Design-box2{
-  background-image: url("../images/innovate.png");
-  background-repeat: no-repeat;
   height:350px;
-  background-position: right 32% bottom 70% ;
 }
 
 #Design-box2 .box2{
@@ -228,7 +240,7 @@ main {
 }
 
 #Design-box .button_2 {
-  background-color: #73B9C2;
+  background-color: #D7C39B;
   height: 45px;
   width: 250px;
   padding-left: 25px;
@@ -240,7 +252,7 @@ main {
 }
 
 #Design-box2 .button_3{
-  background-color: #73B9C2;
+  background-color: #D7C39B;
   height: 45px;
   width: 260px;
   padding-left: 25px;
@@ -260,48 +272,83 @@ main {
 }
 
 @media(max-width:800px){
+#project h2{
+  font-size: 18px;
+}
   #Design-box h3{
     font-size: 18px;
   }
   #Design-box h2{
-    font-size: 22px;
-    margin-left: 40px;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 15px;
   }
   #Design-box{
-    background-size:160px;
-    height: 420px;
-    background-position: right 0% bottom 5% ;
-    width: 90%;
-    margin-left: 10px;
+    /* background-size:160px; */
+    height: 450px;
+    /* background-position: right 3% bottom 25% ; */
+    width: 100%;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+/* filter: grayscale(70%); */
+   /* filter: opacity(50%); */
   }
 
   #Design-box .box1{
-    width:80%;
-    height: 300px;
-    padding: 0;
-    margin-top: 20px;
-    border: none;
-    margin-left: 25px;
+    width: 90%;
+    height: 40%;
     float: none;
+    margin-right: auto;
+    margin-left: 5%;
+    padding: 0;
+    border: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .empathy{
+    /* right: 1%;
+    top: 1230px;
+    margin-left: auto; */
+    filter: opacity(50%);
+    height: 190px;
+    float: none;
+    top: 1330px;
+    left: 28%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .innovate{
+    filter: opacity(50%);
+    height: 190px;
+    float: none;
+    top: 1780px;
+    /* bottom: 2%; */
+    left: 30%;
+    margin-right: auto;
+    margin-left: auto;
   }
   #Design-box .button_2 {
     width: 220px;
   }
   #Design-box2{
-    background-size: 160px;
-    height: 360px;
-    background-position: right 3% bottom 5% ;
-    width: 90%;
-    margin-left: 30px;
+    /* background-size: 160px; */
+    height: 470px;
+    /* background-position: right 3% bottom 45% ; */
+    width: 100%;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+
   }
   #Design-box2 .box2{
-    width: 70%;
-    height: 260px;
+    width: 90%;
     padding: 0;
-    margin-top:20px;
+    margin-top:2%;
     border: none;
-    margin-left: 0;
     float: none;
+    margin-right: auto;
+    margin-left: auto;
   }
   #Design-box2 .button_2 {
     width: 200px;
@@ -369,7 +416,12 @@ p {
   list-style: none;
   display: inline;
 }
-
+#twitter{
+  font-size:35px;
+  padding-right: 22px;
+  padding-left:10px;
+  text-decoration:none;
+}
 @media(max-width:800px){
   footer{
     height:210px;
@@ -558,6 +610,12 @@ p {
 }
 
 /* for overview */
+hgroup{
+  color: #777777;
+  font-size: 22px;
+  font-weight:bold;
+  margin-left: 5%;
+}
 .new1{
   border: 2px solid #777777;
   align: center;
@@ -752,7 +810,14 @@ p {
   box-shadow: 10px 10px #9ACAD0;
   margin-bottom: 30px;
 }
-
+.curious{
+width:200px;
+height:80px;
+}
+.bigoven{
+width:180px;
+height:70px;
+}
 #intro .story {
   margin-left: 350px;
   width: 45%;
@@ -961,6 +1026,7 @@ p {
     margin-left: auto;
     float: none;
   }
+
   #intro .story {
     width: 85%;
     height:35%;
@@ -1458,7 +1524,9 @@ input[type=submit]:hover {
   header nav li {
     float:none;
     text-align: center;
-    width:100%;
+    width:105%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   header{
@@ -1475,7 +1543,7 @@ input[type=submit]:hover {
     padding-bottom: 100px;
   }
   #name h1 h4 h5 .slogan {
-    text-align: left;
+    text-align: center;
     margin-left: 16px;
   }
   #name h1{
@@ -1702,7 +1770,7 @@ input[type=submit]:hover {
   }
   #testing .end {
     width: 85%;
-    height: 60%;
+    height: 50%;
     float: none;
     display: block;
     margin-right: auto;
