@@ -5,28 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Wajiha Ahmed</title>
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <!-- fontawesome -->
+
+  <!-- fontawesome -->
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
   <!-- Custom Styles -->
+
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
   <script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
   }
-}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 </script>
 
 </head>
@@ -54,7 +59,6 @@ function topFunction() {
         <div class="logo" ></div>
         <h1>Hi! I'm
           <span style= "color:#BA9344;">  Wajiha </span><br>
-          <!-- <span id="brackets">[ Wa-G-ha ] -->
         </h1>
         <h5 class="slogan" id= "intro">
           A User Experience Designer </h5>
@@ -70,7 +74,6 @@ function topFunction() {
     <section id="project">
       <div class="container">
         <h2>My Featured Project </h2>
-        <!-- <p class="mainproject" ></p> -->
         <div class="box">
           <h1> Healthy Portions </h1>
           <h4>
@@ -112,19 +115,24 @@ function topFunction() {
           </h4>
           <ul class="center contact-icons">
             <li>
-              <a href="https://twitter.com/Wajihaalmas" id="twitter" class="fab fa-twitter" alt="twitter"></a>
+              <a href="https://twitter.com/Wajihaalmas" ></a>
+              <i id="twitter" class="fab fa-twitter" ></i>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/wajihaalmas/" id="twitter" class="fab fa-linkedin" alt="linkedin"></a>
+              <a href="https://www.linkedin.com/in/wajihaalmas/" ></a>
+              <i id="linkedin" class="fab fa-linkedin" ></i>
             </li>
             <li>
-              <a href="https://github.com/wajiha04" id ="twitter" class="fab fa-github" alt= "github"></a>
+              <a href="https://github.com/wajiha04" ></a>
+              <i id ="github" class="fab fa-github" ></i>
             </li>
             <li>
-              <a href="mailto:wajiha.ahmed04@gmail.com" id ="twitter" class="fas fa-envelope" alt="email"></a>
+              <a href="mailto:wajiha.ahmed04@gmail.com"  ></a>
+              <i id ="email" class="fas fa-envelope"></i>
             </li>
             <li>
-              <a href="resume.html" id ="twitter" class="fas fa-briefcase" alt="resume"></a>
+              <a href="resume.html" ></a>
+              <i  id ="briefcase" class="fas fa-briefcase" ></i>
             </li>
           </ul>
           <hr>
@@ -141,7 +149,7 @@ function topFunction() {
     gtag('js', new Date());
 
     gtag('config', 'UA-133199338-1');
-  </script>
+    </script>
 
-</body>
-</html>
+  </body>
+  </html>
