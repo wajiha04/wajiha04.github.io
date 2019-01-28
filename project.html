@@ -10,8 +10,28 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
+  <script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
 </head>
 <body id="background1">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
   <header>
     <div class="container">
       <!-- top navbar -->
@@ -321,84 +341,100 @@
                                     <div class="final">
                                       <p>Applying suggestions based on user testing, I created the latest version of “Healthy Portions”.I stayed focused on the target of creating a cloud data storage service while applying branding to reinforce the product identity and applying usability changes with real users in mind. These screens can be viewed here </p>
                                     </div>
+                                    <div class="screens">
 
-                                    <div class="row1">
-                                      <div class="column1">
-                                        <img src="./images/signup.png" class= "signup" alt="signup" >
-                                      </div>
-                                      <div class="column1">
-                                        <img src="./images/Saved.png" class= "saved" alt="saved" >
-                                      </div>
-                                      <div class="column1">
-                                        <img src="./images/spinner-result.png" class= "spinner-result" alt= "spinner-result" >
-                                      </div>
-                                      <div class="column1">
-                                        <img src="./images/spinner.png" class= "spinner" alt="spinner" >
-                                      </div>
-                                      <div class="column1">
-                                        <img src="./images/choosebox.png" class= "choose-box" alt="choose-box" >
-                                      </div>
-                                      <div class="column1">
-                                        <img src="./images/friends.png" class= "friends" alt= "friends" >
+
+                                      <div class="mobile">
+                                        <div class=" padding-top">
+                                          <div class="quarter row-1 off">
+                                            <img class="hidden off" src="./images/signu.png" alt="final screens for mobile"/>
+                                          </div>
+                                          <div class="quarter row-2 off">
+                                            <img class="hidden off"  src="./images/lodingscreen.png" alt="final screens for mobile"/>
+                                            <img class="hidden off" src="./images/spinner-resul.png" alt="final screens for mobile"/>
+                                          </div>
+                                          <div class="quarter row-3 off">
+                                            <img class="hidden off" src="./images/spinner1.png" alt="final screens for mobile"/>
+                                            <img class="hidden off" src="./images/choosebo.png" alt="final screens for mobile"/>
+                                          </div>
+                                          <div class="quarter row-4 off">
+                                            <img class="hidden off" src="./images/friend.png" alt="final screens for mobile"/>
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
-
-                                    <div class="prototype-button">
-                                      <a href="https://invis.io/5TP3GZ29ZDV" class="button_4">View Mobile Prototype</a>
-                                    </div>
-
-                                    <h6> Conclusion </h6>
-                                    <div class="end">
-                                      <p>User Surveys proved to be very beneficial in providing a focus on creating our product. Researching User Flows for competitors was also helpful in guiding us on what screens and modal windows to create. Users responded positively to the line illustrations of the final design. Feedback from senior designers, Usability Tests, and Preference Tests helped me to fine-tune visuals and specific elements of UIs. Perhaps the biggest changes made throughout the design process was organizing screen evolution.
-                                        The rounds of Usability Testing revealed tasks, instructions, or processes that seemed clear to me, but were not so clear to different users. This helped me to see and realize things I could not surmise on my own. The Preference Test helped me to make design decisions that were challenging to make on my own. </p>
-                                      </div>
-                                      <h6> Lesson Learned </h6>
-                                      <div class="lesson">
-                                        <p>It was both challenging and fun to design “Healthy Portions” from start to current finish product. Throughout this process, I learned that the more testing you can do the better, and it's okay to love an idea, but you have to be willing to let it go too.Lastly, I learned that it is more important to have finished good enough project than an unfinished “perfect” project. it’s amazing how helping my users give me a new, humbling perspective on my own goals,designing products that positively impact and serve the greater good. </p>
+                                    <div class="slider none">
+                                      <img class="hidden mobile-screen none" src="./images/signu.png" alt="final screens for mobile"/>
+                                      <img class="hidden mobile-screen none" src="./images/lodingscreen.png" alt="final screens for mobile"/>
+                                      <img class="hidden mobile-screen none" src="./images/spinner-resul.png" alt="final screens for mobile"/>
+                                      <img class="hidden mobile-screen none" src="./images/spinner1.png" alt="final screens for mobile"/>
+                                      <img class="hidden mobile-screen none" src="./images/choosebo.png" alt="final screens for mobile"/>
+                                      <img class="hidden mobile-screen none" src="./images/friend.png" alt="final screens for mobile"/>
+                                      <div class="slideshow-controls">
+                                        <div class="left text-white" onclick="plusDivs(-1)">&#10094;</div>
+                                        <div class="right text-white" onclick="plusDivs(1)">&#10095;</div>
                                       </div>
                                     </div>
+                                  </div>
+
+
+                                  <div class="prototype-button">
+                                    <a href="https://invis.io/5TP3GZ29ZDV" class="button_4">View Mobile Prototype</a>
+                                  </div>
+
+                                  <h6> Conclusion </h6>
+                                  <div class="end">
+                                    <p>User Surveys proved to be very beneficial in providing a focus on creating our product. Researching User Flows for competitors was also helpful in guiding us on what screens and modal windows to create. Users responded positively to the line illustrations of the final design. Feedback from senior designers, Usability Tests, and Preference Tests helped me to fine-tune visuals and specific elements of UIs. Perhaps the biggest changes made throughout the design process was organizing screen evolution.
+                                      The rounds of Usability Testing revealed tasks, instructions, or processes that seemed clear to me, but were not so clear to different users. This helped me to see and realize things I could not surmise on my own. The Preference Test helped me to make design decisions that were challenging to make on my own. </p>
+                                    </div>
+                                    <h6> Lesson Learned </h6>
+                                    <div class="lesson">
+                                      <p>It was both challenging and fun to design “Healthy Portions” from start to current finish product. Throughout this process, I learned that the more testing you can do the better, and it's okay to love an idea, but you have to be willing to let it go too.Lastly, I learned that it is more important to have finished good enough project than an unfinished “perfect” project. it’s amazing how helping my users give me a new, humbling perspective on my own goals,designing products that positively impact and serve the greater good. </p>
+                                    </div>
+                                  </div>
+                                </section>
+                                <!-- footer -->
+                                <footer>
+                                  <section class="footer">
+                                    <div class="container">
+
+                                      <h2 class="diff"> Let's Connect!</h2>
+                                      <h4  class="difference">
+                                        Thank you for stopping by, I hope you enjoyed my work. <br>
+                                        Feel free to connect with me.
+                                      </h4>
+                                      <ul class="center contact-icons">
+                                        <li>
+                                          <a href="https://twitter.com/Wajihaalmas" id="twitter" class="fab fa-twitter" alt="twitter"></a>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.linkedin.com/in/wajihaalmas/" id="twitter" class="fab fa-linkedin" alt="linkedin"></a>
+                                        </li>
+                                        <li>
+                                          <a href="https://github.com/wajiha04" id ="twitter" class="fab fa-github" alt= "github"></a>
+                                        </li>
+                                        <li>
+                                          <a href="mailto:wajiha.ahmed04@gmail.com" id ="twitter" class="fas fa-envelope" alt="email"></a>
+                                        </li>
+                                        <li>
+                                          <a href="resume.html" id ="twitter" class="fas fa-briefcase" alt="resume"></a>
+                                        </li>
+                                      </ul>
+                                      <hr>
+                                      <p class="copyright"> &copy; 2019 | designed & developed by Wajiha Ahmed</p>
+                                    </div>
+
                                   </section>
-                                  <!-- footer -->
-                                  <footer>
-                                    <section class="footer">
-                                      <div class="container">
+                                  <script src="js/main.js"></script>
+                                </footer>
+                                <!-- Global site tag (gtag.js) - Google Analytics -->
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133199338-1"></script>
+                                <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
 
-                                        <h2 class="diff"> Let's Connect!</h2>
-                                        <h4  class="difference">
-                                          Thank you for stopping by, I hope you enjoyed my work. <br>
-                                          Feel free to connect with me.
-                                        </h4>
-                                        <ul class="center contact-icons">
-                                          <li>
-                                            <a href="https://twitter.com/Wajihaalmas" id="twitter" class="fab fa-twitter" alt="twitter"></a>
-                                          </li>
-                                          <li>
-                                            <a href="https://www.linkedin.com/in/wajihaalmas/" id="twitter" class="fab fa-linkedin" alt="linkedin"></a>
-                                          </li>
-                                          <li>
-                                            <a href="https://github.com/wajiha04" id ="twitter" class="fab fa-github" alt= "github"></a>
-                                          </li>
-                                          <li>
-                                            <a href="mailto:wajiha.ahmed04@gmail.com" id ="twitter" class="fas fa-envelope" alt="email"></a>
-                                          </li>
-                                          <li>
-                                            <a href="resume.html" id ="twitter" class="fas fa-briefcase" alt="resume"></a>
-                                          </li>
-                                        </ul>
-                                        <hr>
-                                        <p class="copyright"> &copy; 2019 | designed & developed by Wajiha Ahmed</p>
-                                      </div>
-
-                                    </section>
-                                  </footer>
-                                  <!-- Global site tag (gtag.js) - Google Analytics -->
-                                  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133199338-1"></script>
-                                  <script>
-                                  window.dataLayer = window.dataLayer || [];
-                                  function gtag(){dataLayer.push(arguments);}
-                                  gtag('js', new Date());
-
-                                  gtag('config', 'UA-133199338-1');
+                                gtag('config', 'UA-133199338-1');
                                 </script>
 
                               </body>
