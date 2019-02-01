@@ -1441,7 +1441,6 @@ h5 {
     float: none;
     margin-right: auto;
     margin-left: auto;
-    border:2px solid;
   }
 
   #Design-box .box1{
@@ -1460,7 +1459,7 @@ h5 {
     float: none;
     margin-right: auto;
     margin-left: auto;
-      height: 180px;
+    height: 180px;
     margin-top: -100px;
     left:35%;
   }
@@ -1469,7 +1468,6 @@ h5 {
     filter: opacity(70%);
     height: 180px;
     float: none;
-    /* top: 1730px; */
     left: 30%;
     margin-right: auto;
     margin-left: auto;
@@ -1587,8 +1585,9 @@ h5 {
     margin-top: 10px;
   }
   .prototype-button{
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  padding: 0;
   }
 }
 /******************************/
@@ -2057,7 +2056,6 @@ h5 {
   margin-right: auto;
   margin-left: auto;
   padding: 0;
-  margin-bottom: 5%;
 }
 
 #testing .row{
@@ -2069,7 +2067,7 @@ h5 {
 }
 
 .organize2{
-  width: 100%;
+  width: 80%;
   float: none;
   display: block;
   margin-right: auto;
@@ -2077,12 +2075,11 @@ h5 {
 }
 
 .organize1{
-  width: 100%;
+  width: 80%;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 2%;
 }
 
 #testing .utest {
@@ -2142,7 +2139,7 @@ h5 {
   }
 
   .slider img{
-    width:80%;
+    width:95%;
     margin:0 auto;
   }
 
@@ -2155,9 +2152,9 @@ h5 {
 
   .row-1, .row-2, .row-3, .row-4{
     position: unset;
-      top:0;
-      left:0;
-      display: none;
+    top:0;
+    left:0;
+    display: none;
   }
 
   .smaller {
