@@ -510,7 +510,8 @@ padding: 8px;
 .prototype-button{
 margin: 0 auto;
 width: 70%;
-padding-top: 10px;
+margin-top: 25px;
+margin-bottom: -10px;
 }
 /******************************/
 /* for three boxes in project.html */
@@ -519,7 +520,7 @@ padding-top: 10px;
 #boxes {
 width: 100%;
 margin-top: 40px;
-height: 340px;
+height: 310px;
 margin-left: auto;
 margin-right: auto;
 }
@@ -1155,7 +1156,6 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
-margin-top: 0;
 }
 
 #testing .end {
@@ -1585,6 +1585,10 @@ h5 {
   #project-name p{
     font-size: 16px;
     margin-top: 10px;
+  }
+  .prototype-button{
+  margin-top: 20px;
+  margin-bottom: 10px;
   }
 }
 /******************************/
@@ -2242,7 +2246,7 @@ h5 {
   margin-left: auto;
   text-align: center;
   float: none;
-  margin-top: 3%;
+  /* margin-top: 3%; */
 }
 
 #testing .end {
