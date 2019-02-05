@@ -34,7 +34,8 @@ font-size: 18px;
 line-height: 1.5;
 padding: 0;
 margin: 0;
-background-size: contain;
+background-size: cover;
+/* background-size: contain; */
 }
 
 #background {
@@ -128,6 +129,7 @@ main {
     width:72%;
     margin:0 auto;
     max-width: 1450px;
+  
   }
 
 
