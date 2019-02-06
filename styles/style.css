@@ -61,14 +61,15 @@ background-size: cover;
 width: 100%;
 margin: auto;
 overflow-y: hidden;
-overflow-x: scroll;
+/* overflow-x: scroll; */
+overflow-x: hidden;
 margin: 0,auto;
 }
 
 /******************************/
   /***** header - nav ***********/
   /******************************/
-header {
+/* header {
 background: #F5F2F2;
 color: #ffffff;
 min-height: 70px;
@@ -78,7 +79,7 @@ z-index: 99;
 }
 
 header .current a{
-color: #73B9C2;
+color: #3B7D7C;
 }
 
 header a{
@@ -122,14 +123,24 @@ nav{
 }
 header .icon{
   display:none;
+} */
+
+.bs-example li{
+  margin-right: 10px;
+  padding: 20px;
+}
+.navbar-brand{
+width:100%;
+height: 90px;
+margin-left:22px;
 }
 
 main {
-    padding-top: 5.5rem;
-    width:72%;
+    /* padding-top: 5.5rem; */
+    /* width:72%; */
+    width:90%;
     margin:0 auto;
     /* max-width: 1450px; */
-
   }
 
 
@@ -175,13 +186,13 @@ margin-bottom: 1%;
 #name {
 text-align: center;
 height: 480px;
-width: 20%
-margin: 0 auto;
-padding-top: 12%;
+width: 100%;
+margin:  auto;
+padding-top: 10%;
 }
 
 #name h1{
-font-size: 65px;
+font-size: 70px;
 color: #414546;
 }
 
@@ -189,11 +200,12 @@ color: #414546;
 color: #414546;
 font-size: 25px;
 font-weight: normal;
+margin-top: 2%;
 }
 
 #name h5{
 color:#3B7D7C;
-font-size: 25px;
+font-size: 32px;
 font-weight: normal;
 margin-top: 2%;
 }
@@ -225,10 +237,11 @@ margin-top: 2%;
 #project h2{
 color: #414546;
 font-size: 30px;
-text-align: center;
+text-align: left;
 font-weight: bold;
 padding: 15px;
 margin-bottom: 3%;
+margin-left: 5%;
 }
 
 .button_1 {
@@ -422,7 +435,7 @@ padding-top: 20px;
 /******************************/
 
 footer {
-height: 250px;
+height: 270px;
 background-color: #414546;
 width: 100%;
 bottom: 0;
@@ -1294,6 +1307,14 @@ margin: 0 auto;
   width: 65%;
 }
 
+#bio h5{
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 95%;
+  text-align: left;
+  margin-bottom: 1%;
+}
+
 .book{
 margin-left: 50%;
 margin: 0 auto;
@@ -1414,13 +1435,27 @@ background-color: #73B9C2;
 
   @media(max-width:500px){}
    */
+
 @media(max-width:800px){
 body {
   font-size: 15px;
   line-height: 1.5;
 }
+.bs-example li{
 
-header #background,
+padding: 20px;
+margin-right: auto;
+margin-left: auto;
+float: right;
+}
+.navbar-brand{
+  width:30%;
+
+}
+.navbar-toggle{
+  margin-top: 30px;
+}
+/* header #background,
 header nav,
 header nav li {
   float:none;
@@ -1443,17 +1478,21 @@ header{
   float: none;
   margin: 0 auto;
   padding-bottom: 8px;
-  /* margin-right: 10px; */
   margin-left: 1%;
-}
+} */
 /******************************/
 /* media query for homepage */
 /******************************/
 
 #name{
-  height:90%;
-  margin-top: 5%;
+  height:100%;
+  margin-top: 10%;
   margin-bottom: 10%;
+  width:100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+
 }
 
 #name .logo{
@@ -1462,19 +1501,22 @@ header{
 
 #name h1 h4 h5 .slogan {
   text-align: center;
+
 }
  #name h5{
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 3%;
+  padding-top: 15px;
 }
 #name h1{
-  font-size: 36px;
+  font-size: 38px;
   text-align: center;
 }
 
 #name h4 ,
 h5 {
-  font-size: 18px;
+  font-size: 20px;
+  text-align: center;
 }
 
 #hide-sm {
@@ -1530,6 +1572,7 @@ width:100%;
 
 #project h4{
   font-size: 18px;
+
 }
 
 #project p{
@@ -1668,7 +1711,7 @@ width:100%;
 
 @media(max-width:800px){
   footer{
-    height:210px;
+    height:100%;
   }
 
   .diff{
@@ -1686,6 +1729,7 @@ width:100%;
     float: none;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom:  1%;
 
   }
 }
@@ -2453,15 +2497,20 @@ width:100%;
 #background3{
   background-image:  none;
 }
-
+#about{
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
 #about h1 {
   font-size: 24px;
-  margin-top: 30px;
+  /* margin-top: 20px; */
 }
 
 #about h4 {
   font-size: 22px;
   padding: 0;
+  margin-top: 1%;
 }
 h5 {
   font-size: 15px;
@@ -2473,7 +2522,11 @@ h5 {
   margin-left: auto;
   width: 100%;
 }
-
+#bio h5{
+  width:93%;
+  margin-right: auto;
+  margin-left: auto;
+}
 #bio {
   width: 90%;
   height: 99%;
