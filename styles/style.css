@@ -216,6 +216,7 @@ margin-top: 2%;
   margin: 0 auto;
   padding-top: 10%;
 }
+
 /******************************/
 /* for homepage-work demo */
 /******************************/
@@ -231,7 +232,6 @@ margin-top: 2%;
  margin-bottom: 20px;
  margin: 0 auto;
  width: 100%;
-
 }
 
 #project h2{
@@ -239,8 +239,8 @@ color: #414546;
 font-size: 30px;
 text-align: left;
 font-weight: bold;
-padding: 15px;
-margin-bottom: 3%;
+padding: 10px;
+/* margin-bottom: 3%; */
 margin-left: 5%;
 }
 
@@ -272,7 +272,7 @@ line-height: 28px;
 font-size: 20px;
 color: #414546;
 padding-top: 10px;
-padding-bottom: 20px;
+padding-bottom: 15px;
 font-weight: normal;
 text-align: justify;
 }
@@ -476,7 +476,7 @@ width:100%;
 
 p {
 font-size: 1.2rem;
-padding-top: 5px;
+/* padding-top: 5px; */
 }
 
 .difference{
@@ -531,19 +531,17 @@ text-decoration:none;
   /***** casestudy -ordered by sections***********/
   /******************************/
 
-
 #project-name {
 background-image: url("../images/desk.png");
 background-repeat: no-repeat;
-background-position: center top 30% ;
-background-size:800px;
-height: 100%;
-/* background-blend-mode: lighten; */
+background-position: center top 36% ;
+background-size:830px;
+padding-top: 5%;
 }
 
 #project-name h1{
 text-align: center;
-margin-top: 5px;
+margin-top: 15px;
 color: #3B7D7C;
 font-size: 35px;
 font-weight: bold;
@@ -557,7 +555,7 @@ font-weight:bold;
 
 #project-name h4{
 text-align: center;
-margin-bottom: 10px;
+margin-bottom: 30px;
 color: #BA9344;
 font-size: 28px;
 font-weight: normal;
@@ -567,9 +565,9 @@ margin-left: 20px;
 #project-name .big-box{
 margin-left: auto;
 margin-right: auto;
-margin-top: 640px;
+margin-top: 600px;
 border: 6px solid #73B9C2;
-width: 55%;
+width: 75%;
 height: 50%;
 background-color: white;
 text-align: center;
@@ -728,7 +726,7 @@ padding-left: 15px;
 }
 
 #intro .result1{
-margin-left:9%;
+margin-left:7%;
 float: left;
 width: 24%;
 text-align: left;
@@ -738,33 +736,37 @@ text-align: left;
 float: left;
 width: 23%;
 text-align: left;
-margin-left:10%;
+margin-left:7%;
 }
 
 #intro .result3{
 float: left;
 width: 23%;
 text-align: left;
-margin-left:10%;
+margin-left:7%;
 }
 
+.bigbox li{
+  padding: 15px;
+}
 #intro h4{
 color:#3B7D7C;
 font-size: 28px;
 font-weight: bold;
-padding-top: 30px;
+/* padding-top: 30px; */
 }
 
 #intro .bigbox{
 float: center;
 border: 6px solid #9ACAD0;
-height: 400px;
+height: 440px;
 text-align: center;
 margin-left: auto;
 margin-right: auto;
-width: 80%;
+width: 90%;
 margin-top: 5%;
-padding: 1%;
+padding: 8px;
+margin-bottom: 5%;
 }
 
 #intro .personas {
@@ -1711,13 +1713,13 @@ width:100%;
 
 @media(max-width:800px){
   footer{
-    height:100%;
+    height:110%;
   }
 
   .diff{
     font-weight: normal;
     font-size: 20px;
-    padding-top: 10px;
+    padding-top: 4%;
   }
 
   .difference{
@@ -1729,9 +1731,10 @@ width:100%;
     float: none;
     margin-right: auto;
     margin-left: auto;
-    padding-bottom:  1%;
 
   }
+.copyright{
+  padding-bottom: 10px;}
 }
   /* --------------------------------------- */
 /* media query for casestudy- ordered by section */
@@ -1741,8 +1744,8 @@ width:100%;
   #project-name{
     background-position: center top 30% ;
     background-size:85%;
-    height: 90%;
-    padding-top: 15px;
+    height: 100%;
+    /* padding-top: 10px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1750,7 +1753,7 @@ width:100%;
 
   #project-name .big-box{
     float: none;
-    width: 90%;
+    width: 95%;
     height: 80%;
     margin-top: 65%;
     display: block;
@@ -1768,11 +1771,10 @@ width:100%;
 
   #project-name h4{
     font-size: 18px;
-    margin-bottom: 5px;
+    padding-bottom:  2%;
     margin-left: auto;
     margin-right: auto;
     float: none;
-    padding: 0;
   }
 
   #project-name h3{
@@ -1917,41 +1919,41 @@ width:100%;
 
   #intro .bigbox{
     float: none;
-    width: 95%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
-  /* height: 420px; */
+  /* height: 470px; */
+  display: block;
   }
-
+.bibox li{
+  padding:2%;
+}
   #intro .result1{
-    width: 26%;
+    width: 40%;
     display: block;
     margin-right: auto;
-    margin-left: 6%;
     height: 35%;
-    padding: 0;
+
 
   }
 
   #intro .result2{
-    width: 24%;
+    width: 40%;
     display: block;
     margin-right: auto;
-    margin-left: 6%;
     height: 45%;
-    padding: 0;
+
   }
 
   #intro .result3{
-    width: 24%;
+    width: 25%;
     display: block;
     margin-right: auto;
-    margin-left: 6%;
     height: 45%;
-    padding: 0;
+display: none;
   }
 
-  .users .p{
+  .users p{
     margin-top: 30px;
   }
 
@@ -2321,7 +2323,7 @@ width:100%;
   display: block;
   margin-right: auto;
   margin-left: auto;
-  height:55%;
+  height:40%;
 }
 /******************************/
     /* transition final product */
@@ -2336,7 +2338,7 @@ width:100%;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    padding: 15px;
+    padding: 8px;
     position: unset;
     top:0;
   }
