@@ -53,7 +53,6 @@ background-size: 100% 100%;
 #background3 {
 background-image: url("../images/background3.png");
 background-repeat: no-repeat;
-/* background-size: 100% 100%; */
 background-size: cover;
 }
 
@@ -69,65 +68,11 @@ margin: 0,auto;
 /******************************/
   /***** header - nav ***********/
   /******************************/
-/* header {
-background: #F5F2F2;
-color: #ffffff;
-min-height: 70px;
-position: fixed;
-transition: top 0.2s ease-in-out;
-z-index: 99;
-}
-
-header .current a{
-color: #3B7D7C;
-}
-
-header a{
-color: #414546;
-text-decoration: none;
-text-transform: uppercase;
-font-style: 16px;
-font-weight: normal;
-}
-
-header ul{
-margin: 0;
-padding: 0;
-margin-right:40px;
-float: right;
-margin-top: 10px;
-}
-
-header li{
-float: left;
-display: inline;
-padding: 0 20px 0 20px;
-}
-
-header a:hover{
-color: #73B9C2;
-}
-
-header nav{
-float:right;
-}
-
-nav{
-  position: fixed;
-  background: #F5F2F2;
-  color: #414546;
-  padding-top: 18px;
-  min-height: 70px;
-  width: 100%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-header .icon{
-  display:none;
-} */
 
 .bs-example li{
   margin-right: 10px;
   padding: 20px;
+
 }
 .navbar-brand{
 width:100%;
@@ -135,9 +80,16 @@ height: 90px;
 margin-left:22px;
 }
 
+.bs-example a{
+  text-transform: uppercase;
+  font-style: 16px;
+}
+
+header a:hover{
+color: #73B9C2;
+}
+
 main {
-    /* padding-top: 5.5rem; */
-    /* width:72%; */
     width:90%;
     margin:0 auto;
     /* max-width: 1450px; */
@@ -274,7 +226,7 @@ color: #414546;
 padding-top: 10px;
 padding-bottom: 15px;
 font-weight: normal;
-text-align: justify;
+text-align: left;
 }
 
 #project .box{
@@ -325,7 +277,7 @@ color: #414546;
 padding-top: 10px;
 padding-bottom: 20px;
 font-weight: normal;
-text-align: justify;
+text-align: left;
 }
 #blocjam{
   margin-top: 4%;
@@ -333,7 +285,9 @@ text-align: justify;
   height: 500px;
 }
 #demo{
-  width:85%;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
 }
 /******************************/
 /* for design box */
@@ -532,11 +486,14 @@ text-decoration:none;
   /******************************/
 
 #project-name {
-background-image: url("../images/desk.png");
-background-repeat: no-repeat;
-background-position: center top 36% ;
+/* background-image: url("../images/desk.png"); */
+/* background-repeat: no-repeat; */
+background-position: center  ;
 background-size:830px;
 padding-top: 5%;
+padding-top: 5%;
+height:100%;
+text-align: center;
 }
 
 #project-name h1{
@@ -555,7 +512,7 @@ font-weight:bold;
 
 #project-name h4{
 text-align: center;
-margin-bottom: 30px;
+/* margin-bottom: 30px; */
 color: #BA9344;
 font-size: 28px;
 font-weight: normal;
@@ -565,7 +522,7 @@ margin-left: 20px;
 #project-name .big-box{
 margin-left: auto;
 margin-right: auto;
-margin-top: 600px;
+/* margin-top: 600px; */
 border: 6px solid #73B9C2;
 width: 75%;
 height: 50%;
@@ -657,7 +614,7 @@ height: 35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 250px;
+margin-left: 5%;
 margin-top: 20px;
 margin-bottom: 15px;
 font-weight: bold;
@@ -702,7 +659,7 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 250px;
+margin-left: 5%;
 margin-top: 30px;
 font-weight: bold;
 }
@@ -714,7 +671,7 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 250px;
+margin-left: 5%;
 margin-top: 30px;
 font-weight: bold;
 }
@@ -800,7 +757,7 @@ margin-right: auto;
 
 #intro .persona1{
 border:0.5px;
-padding: 2%;
+padding: 1%;
 height: 100%;
 box-shadow: 10px 10px #9ACAD0;
 background: #E7EEEE;
@@ -871,7 +828,7 @@ width:25%;
 
 .curious {
 width:100%;
-height:100px;
+height:70px;
 }
 
 .bigoven{
@@ -925,7 +882,7 @@ height: 35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 250px;
+margin-left: 5%;
 margin-top: 20px;
 margin-bottom: 15px;
 font-weight: bold;
@@ -983,7 +940,7 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 250px;
+margin-left: 5%;
 margin-top: 30px;
 font-weight: bold;
 margin-bottom: 15px;
@@ -1061,8 +1018,8 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 170px;
-margin-top: 30px;
+margin-left: 5%;
+margin-top: 5px;
 font-weight: bold;
 }
 
@@ -1073,7 +1030,7 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 170px;
+margin-left: 5%;
 margin-top: 30px;
 font-weight: bold;
 }
@@ -1742,20 +1699,20 @@ width:100%;
 
 @media(max-width:800px){
   #project-name{
-    background-position: center top 30% ;
-    background-size:85%;
+    /* background-position: center top 30% ; */
+    background-size:90%;
     height: 100%;
-    /* padding-top: 10px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
   }
 
   #project-name .big-box{
     float: none;
     width: 95%;
     height: 80%;
-    margin-top: 65%;
+    /* margin-top: 65%; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -2479,7 +2436,8 @@ display: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: -10px;
+  /* margin-bottom: -10px; */
+  margin-top: 10px;
 }
 
 #testing .lesson {
@@ -2490,6 +2448,7 @@ display: none;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 35px;
+    margin-top: 10px;
 }
 
 /******************************/
