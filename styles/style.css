@@ -168,7 +168,10 @@ margin-top: 2%;
   margin: 0 auto;
   padding-top: 10%;
 }
-
+a:hover{
+color: #BA9344;
+text-decoration: none;
+}
 /******************************/
 /* for homepage-work demo */
 /******************************/
@@ -202,7 +205,7 @@ height: 45px;
 border-radius: 20px;
 padding: 12px 25px 12px 25px;
 color: #ffffff;
-font-size: 16px;
+font-size: 17px;
 font-weight: normal;
 text-decoration: none;
 }
@@ -288,6 +291,7 @@ text-align: left;
   width: 85%;
   margin-right: auto;
   margin-left: auto;
+  /* height:100%; */
 }
 /******************************/
 /* for design box */
@@ -491,14 +495,13 @@ text-decoration:none;
 background-position: center  ;
 background-size:830px;
 padding-top: 5%;
-padding-top: 5%;
 height:100%;
 text-align: center;
 }
 
 #project-name h1{
 text-align: center;
-margin-top: 15px;
+/* margin-top: 5px; */
 color: #3B7D7C;
 font-size: 35px;
 font-weight: bold;
@@ -523,7 +526,7 @@ margin-left: 20px;
 margin-left: auto;
 margin-right: auto;
 /* margin-top: 600px; */
-border: 6px solid #73B9C2;
+border: 5px solid #73B9C2;
 width: 75%;
 height: 50%;
 background-color: white;
@@ -614,7 +617,7 @@ height: 35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 5%;
+margin-left: 15%;
 margin-top: 20px;
 margin-bottom: 15px;
 font-weight: bold;
@@ -650,16 +653,17 @@ margin-right: auto;
 width: 47%;
 height: 80%;
 text-align: left;
+margin-bottom: 5%;
 }
 
-#intro .change{
-width: 20%;
+#intro .change {
+width: 180px;
 padding-top: 4px;
 height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 5%;
+margin-left: 15%;
 margin-top: 30px;
 font-weight: bold;
 }
@@ -671,7 +675,7 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 5%;
+margin-left: 15%;
 margin-top: 30px;
 font-weight: bold;
 }
@@ -706,6 +710,11 @@ margin-left:7%;
 .bigbox li{
   padding: 15px;
 }
+.bigbox ul{
+    padding: 5px;
+    height:60%;
+}
+
 #intro h4{
 color:#3B7D7C;
 font-size: 28px;
@@ -713,10 +722,36 @@ font-weight: bold;
 /* padding-top: 30px; */
 }
 
+#intro .result-1{
+  width:80%;
+  float:none;
+  height:200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#intro .survey{
+  width:40%;
+  float:left;
+  margin-left: 12%
+  padding: 5%;
+  margin-right: auto;
+}
+.people{
+  padding:  5%;
+}
+
+#intro .col-7{
+  width:60%;
+  margin-left: 42%;
+  padding:5%;
+    margin-right: auto;
+}
+
 #intro .bigbox{
 float: center;
 border: 6px solid #9ACAD0;
-height: 440px;
+height: 380px auto;
 text-align: center;
 margin-left: auto;
 margin-right: auto;
@@ -724,6 +759,7 @@ width: 90%;
 margin-top: 5%;
 padding: 8px;
 margin-bottom: 5%;
+
 }
 
 #intro .personas {
@@ -757,7 +793,7 @@ margin-right: auto;
 
 #intro .persona1{
 border:0.5px;
-padding: 1%;
+padding: 3%;
 height: 100%;
 box-shadow: 10px 10px #9ACAD0;
 background: #E7EEEE;
@@ -769,7 +805,7 @@ float: left;
 
 #intro .persona2{
 border:0.5px;
-padding: 2%;
+padding: 3%;
 box-shadow: 10px 10px #9ACAD0;
 height:100%;
 background: #E7EEEE;
@@ -817,7 +853,7 @@ margin-bottom: 2%;
 #intro .epi{
 float: left;
 height:50%;
-padding:10px;
+padding:15px;
 text-align: center;
 margin-left: 7%;
 border: 5px solid black;
@@ -828,7 +864,7 @@ width:25%;
 
 .curious {
 width:100%;
-height:70px;
+/* height:70px; */
 }
 
 .bigoven{
@@ -882,7 +918,7 @@ height: 35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 5%;
+margin-left: 15%;
 margin-top: 20px;
 margin-bottom: 15px;
 font-weight: bold;
@@ -921,16 +957,19 @@ width: 40%;
 margin-left: 8%;
 margin-bottom: 1%;
 height: 450px;
+
 }
 
 .logosketch{
 width:120%;
-height:440px;
+/* height:440px; */
+height: 100%;
 }
 
 .logogp{
   width: 90%;
-height:440px;
+/* height:440px; */
+height: 99.9%;
 }
 
 #branding .change{
@@ -940,7 +979,7 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 5%;
+margin-left: 15%;
 margin-top: 30px;
 font-weight: bold;
 margin-bottom: 15px;
@@ -1018,7 +1057,7 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 5%;
+margin-left: 15%;
 margin-top: 5px;
 font-weight: bold;
 }
@@ -1030,7 +1069,7 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 5%;
+margin-left: 15%;
 margin-top: 30px;
 font-weight: bold;
 }
@@ -1201,10 +1240,10 @@ height: 45px;
 border-radius: 20px;
 border:0;
 color: #ffffff;
-font-size: 16px;
+font-size: 18px;
 font-weight: normal;
 text-decoration: none;
-padding: 12px 25px 12px 25px;
+padding: 10px 25px 10px 25px;
 width: 45%;
 display: block;
 margin-left: auto;
@@ -1874,24 +1913,51 @@ width:100%;
     height: 10%;
   }
 
+  #intro .result-1{
+    width:90%;
+    height:180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  #intro .survey{
+    width:30%;
+    float:left;
+    margin-left: 5%
+    padding:5%;
+    margin-top:5%;
+  }
+
+  #intro .col-7{
+    width:65%;
+    float:right;
+    margin-right: 1%;
+    margin-left: auto;
+    padding:5%;
+
+  }
+  .people{
+    width:90%;
+  }
+
   #intro .bigbox{
     float: none;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-  /* height: 470px; */
-  display: block;
+   display: block;
   }
+
 .bibox li{
   padding:2%;
 }
+
   #intro .result1{
     width: 40%;
     display: block;
     margin-right: auto;
     height: 35%;
-
-
   }
 
   #intro .result2{
@@ -1899,7 +1965,6 @@ width:100%;
     display: block;
     margin-right: auto;
     height: 45%;
-
   }
 
   #intro .result3{
@@ -1907,7 +1972,7 @@ width:100%;
     display: block;
     margin-right: auto;
     height: 45%;
-display: none;
+    display: none;
   }
 
   .users p{
