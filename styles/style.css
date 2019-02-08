@@ -1322,7 +1322,6 @@ display: block;
 }
 
 .Arrow{
-/* position: absolute; */
 right: 180px;
 top: 1400px;
 z-index: -1;
@@ -1351,6 +1350,7 @@ margin: 0 auto;
 width:40%;
 display: block;
 }
+
 .line{
 z-index: -1;
 margin-left: 40%;
@@ -1440,44 +1440,21 @@ body {
   line-height: 1.5;
 }
 .bs-example li{
-
-padding: 20px;
+padding: 0px;
 margin-right: auto;
 margin-left: auto;
 float: right;
 }
 .navbar-brand{
-  width:30%;
-
+  width:auto;
+}
+.nav li{
+  /* margin-top: 15px; */
 }
 .navbar-toggle{
   margin-top: 30px;
 }
-/* header #background,
-header nav,
-header nav li {
-  float:none;
-  text-align: center;
-  width:100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 15px;
-  margin-right: 10px;
-}
 
-header{
-  padding-bottom: 20px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  float:none;
-}
-.logo{
-  float: none;
-  margin: 0 auto;
-  padding-bottom: 8px;
-  margin-left: 1%;
-} */
 /******************************/
 /* media query for homepage */
 /******************************/
@@ -1570,16 +1547,17 @@ width:100%;
 
 #project h4{
   font-size: 18px;
-
 }
 
 #project p{
   font-size: 16px;
   line-height: 23px;
 }
+
 #project hr{
   display: block;
 }
+
 #project2 {
   float: none;
   margin: 0 auto;
@@ -1738,7 +1716,6 @@ width:100%;
 
 @media(max-width:800px){
   #project-name{
-    /* background-position: center top 30% ; */
     background-size:90%;
     height: 100%;
     display: block;
@@ -1751,7 +1728,6 @@ width:100%;
     float: none;
     width: 95%;
     height: 80%;
-    /* margin-top: 65%; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -2197,7 +2173,6 @@ width:100%;
 
 #branding .palette {
   width: 85%;
-  /* height: 20%; */
   float: none;
   display: block;
   margin-right: auto;
@@ -2322,6 +2297,7 @@ width:100%;
   margin-left: auto;
   margin-top: 1%;
 }
+
 #testing .test{
   width: 85%;
   height: 50%;
@@ -2330,6 +2306,7 @@ width:100%;
   margin-right: auto;
   margin-left: auto;
 }
+
 #testing .utest {
   width: 85%;
   height: 50%;
@@ -2523,11 +2500,13 @@ width:100%;
 #background3{
   background-image:  none;
 }
+
 #about{
   width: 100%;
   padding: 0;
   margin: 0 auto;
 }
+
 #about h1 {
   font-size: 24px;
   /* margin-top: 20px; */
@@ -2541,6 +2520,7 @@ width:100%;
 h5 {
   font-size: 15px;
 }
+
 .wajiha {
   float: none;
   display: block;
@@ -2548,11 +2528,13 @@ h5 {
   margin-left: auto;
   width: 100%;
 }
+
 #bio h5{
   width:93%;
   margin-right: auto;
   margin-left: auto;
 }
+
 #bio {
   width: 90%;
   height: 99%;
@@ -2576,11 +2558,11 @@ h5 {
   transform: rotate(90deg);
   float: center;
   display: block;
-  width:15%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 7%;
   margin-bottom: 7%;
+  padding-top:8%;
 
 }
 
