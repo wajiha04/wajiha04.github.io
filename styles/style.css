@@ -10,8 +10,8 @@ html {
 scroll-behavior: smooth;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i" );
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:500,500i" );
 
 /* fancy css for js*/
 @keyframes fade-in {
@@ -27,6 +27,7 @@ opacity: 0;
 /* end fancy css*/
 
 
+
 body {
 font-family: 'Roboto', sans-serif;
 background: #F5F2F2;
@@ -35,7 +36,13 @@ line-height: 1.5;
 padding: 0;
 margin: 0;
 background-size: cover;
-/* background-size: contain; */
+font-weight: 400;
+}
+h1, h2, h3{
+  font-weight: 700;
+}
+h4 h5{
+  font-weight: 300;
 }
 
 #background {
@@ -62,12 +69,16 @@ margin: auto;
 overflow-y: hidden;
 /* overflow-x: scroll; */
 overflow-x: hidden;
-margin: 0,auto;
 }
 
 /******************************/
   /***** header - nav ***********/
   /******************************/
+
+  .navbar-default{
+    background-color: #F5F2F2;
+    border-color: #F5F2F2;
+}
 
 .bs-example li{
   margin-right: 10px;
@@ -75,9 +86,8 @@ margin: 0,auto;
 
 }
 .navbar-brand{
-width:100%;
-height: 90px;
-margin-left:22px;
+height: unset;
+padding: 20px 20px 20px 50px;
 }
 
 .bs-example a{
@@ -89,10 +99,27 @@ header a:hover{
 color: #73B9C2;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #3b7d7c;
+
+}
+.navbar-default .navbar-toggle {
+    border-color:#f5f5f5;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #f5f5f5;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color:#f5f5f5;
+   }
+    .navbar-default .navbar-nav>li>a {
+        color: #3b7d7c;
+}
+
 main {
     width:90%;
     margin:0 auto;
-    /* max-width: 1450px; */
   }
 
 
@@ -126,7 +153,6 @@ background-color: #555;
 
 .logo {
 background-repeat: no-repeat;
-height: 47px;
 margin-left: 5%;
 margin-bottom: 1%;
 }
@@ -136,29 +162,33 @@ margin-bottom: 1%;
   /******************************/
 
 #name {
+display: flex;
 text-align: center;
 height: 480px;
 width: 100%;
 margin:  auto;
-padding-top: 10%;
+/* min-height: 100vh;
+min-height: calc(100vh - 90px);
+margin-top: -90px; */
+margin-top: -10px;
 }
 
 #name h1{
-font-size: 70px;
+font-size:65px;
 color: #414546;
 }
 
 #name h4 {
 color: #414546;
 font-size: 25px;
-font-weight: normal;
-margin-top: 2%;
+/* font-weight: normal; */
+/* margin-top: 2%; */
 }
 
-#name h5{
+#name h5 {
 color:#3B7D7C;
 font-size: 32px;
-font-weight: normal;
+font-weight: lighter;
 margin-top: 2%;
 }
 
@@ -169,8 +199,9 @@ margin-top: 2%;
   padding-top: 10%;
 }
 a:hover{
-color: #BA9344;
+color: #c48f40;
 text-decoration: none;
+background: #eddec8;
 }
 /******************************/
 /* for homepage-work demo */
@@ -193,10 +224,9 @@ text-decoration: none;
 color: #414546;
 font-size: 30px;
 text-align: left;
-font-weight: bold;
-padding: 10px;
-/* margin-bottom: 3%; */
-margin-left: 5%;
+font-weight: 600;
+/* padding: 10px; */
+/* margin-left: 5%; */
 }
 
 .button_1 {
@@ -208,6 +238,7 @@ color: #ffffff;
 font-size: 17px;
 font-weight: normal;
 text-decoration: none;
+transition: 0.3s all;
 }
 
 #project h1 {
@@ -227,7 +258,7 @@ line-height: 28px;
 font-size: 20px;
 color: #414546;
 padding-top: 10px;
-padding-bottom: 15px;
+/* padding-bottom: 15px; */
 font-weight: normal;
 text-align: left;
 }
@@ -278,7 +309,7 @@ line-height: 28px;
 font-size: 20px;
 color: #414546;
 padding-top: 10px;
-padding-bottom: 20px;
+/* padding-bottom: 20px; */
 font-weight: normal;
 text-align: left;
 }
@@ -394,7 +425,7 @@ padding-top: 20px;
 
 footer {
 height: 270px;
-background-color: #414546;
+background-color: #1e4e4d;
 width: 100%;
 bottom: 0;
 text-align: center;
@@ -490,8 +521,6 @@ text-decoration:none;
   /******************************/
 
 #project-name {
-/* background-image: url("../images/desk.png"); */
-/* background-repeat: no-repeat; */
 background-position: center  ;
 background-size:830px;
 padding-top: 5%;
@@ -501,7 +530,6 @@ text-align: center;
 
 #project-name h1{
 text-align: center;
-/* margin-top: 5px; */
 color: #3B7D7C;
 font-size: 35px;
 font-weight: bold;
@@ -515,7 +543,6 @@ font-weight:bold;
 
 #project-name h4{
 text-align: center;
-/* margin-bottom: 30px; */
 color: #BA9344;
 font-size: 28px;
 font-weight: normal;
@@ -525,13 +552,16 @@ margin-left: 20px;
 #project-name .big-box{
 margin-left: auto;
 margin-right: auto;
-/* margin-top: 600px; */
-border: 5px solid #73B9C2;
-width: 75%;
+border: 2px solid #73B9C2;
+width: 100%;
+max-width: 800px;
 height: 50%;
-background-color: white;
+background-color: #ffffff;
 text-align: center;
-padding: 8px;
+padding: 30px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-top: 1%;
+
 }
 
 .prototype-button{
@@ -546,7 +576,7 @@ margin-bottom: -10px;
 
 #boxes {
 width: 100%;
-margin-top: 10%;
+margin-top: 8%;
 height: 300px;
 margin-left: auto;
 margin-right: auto;
@@ -558,8 +588,9 @@ width: 22%;
 text-align: center;
 margin-left:8%;
 height: 180px;
-border: 4px solid black;
+border: 1px solid black;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+background-color: #ffffff;
 }
 
 #boxes .zbox{
@@ -568,8 +599,9 @@ width: 22%;
 text-align: center;
 margin-left:8%;
 height: 290px;
-border: 4px solid black;
+border: 1px solid black;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+background-color: #ffffff;
 }
 
 #boxes h3 {
@@ -596,11 +628,14 @@ float: center;
 /******************************/
 
 .hgroup{
-color: #777777;
-font-size: 22px;
+color: #3B7D7C;
+font-size: 29px;
 font-weight:bold;
 margin-left: 5%;
-margin-top: 2%;
+margin-top: 7%;
+padding: 3px 10px 3px 0;
+border-bottom:  solid #3B7D7C;
+width:90%;
 }
 
 .new1{
@@ -617,7 +652,6 @@ height: 35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 15%;
 margin-top: 20px;
 margin-bottom: 15px;
 font-weight: bold;
@@ -626,7 +660,6 @@ font-weight: bold;
 #intro .problem {
 margin-left: auto;
 margin-right: auto;
-width: 45%;
 height: 40%;
 text-align: left;
 }
@@ -634,7 +667,6 @@ text-align: left;
 #intro .solution {
 margin-left: auto;
 margin-right: auto;
-width: 45%;
 height: 40%;
 text-align: left;
 }
@@ -642,7 +674,6 @@ text-align: left;
 #intro .assumptions {
 margin-left: auto;
 margin-right: auto;
-width: 45%;
 height:60%;
 text-align: left;
 }
@@ -650,7 +681,6 @@ text-align: left;
 #intro .users {
 margin-left: auto;
 margin-right: auto;
-width: 47%;
 height: 80%;
 text-align: left;
 margin-bottom: 5%;
@@ -663,8 +693,8 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 15%;
 margin-top: 30px;
+margin-bottom: 15px;
 font-weight: bold;
 }
 
@@ -675,8 +705,8 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 15%;
 margin-top: 30px;
+margin-bottom: 15px;
 font-weight: bold;
 }
 
@@ -723,7 +753,7 @@ font-weight: bold;
 }
 
 #intro .result-1{
-  width:80%;
+  /* width:80%; */
   float:none;
   height:200px;
   margin-left: auto;
@@ -731,21 +761,21 @@ font-weight: bold;
 }
 
 #intro .survey{
-  width:40%;
+  /* width:40%; */
   float:left;
-  margin-left: 12%
+  margin-left: 10%
   padding: 5%;
   margin-right: auto;
 }
 .people{
-  padding:  5%;
+  /* padding:  5%; */
 }
 
 #intro .col-7{
-  width:60%;
-  margin-left: 42%;
+  /* width:60%; */
+  margin-left: 50%;
   padding:5%;
-    margin-right: auto;
+  margin-right: auto;
 }
 
 #intro .bigbox{
@@ -755,7 +785,7 @@ height: 380px auto;
 text-align: center;
 margin-left: auto;
 margin-right: auto;
-width: 90%;
+/* width: 90%; */
 margin-top: 5%;
 padding: 8px;
 margin-bottom: 5%;
@@ -763,7 +793,6 @@ margin-bottom: 5%;
 }
 
 #intro .personas {
-width: 45%;
 height: 55%;
 text-align: left;
 margin-left: auto;
@@ -772,11 +801,12 @@ margin-right: auto;
 
 #intro .person{
 margin-top: 10px;
-width:90%;
 height:1200px;
 text-align: left;
 margin-left: auto;
 margin-right: auto;
+max-width: 900px;
+width: 90%;
 }
 
 .person h2{
@@ -792,11 +822,11 @@ margin-right: auto;
 }
 
 #intro .persona1{
-border:0.5px;
 padding: 3%;
 height: 100%;
-box-shadow: 10px 10px #9ACAD0;
-background: #E7EEEE;
+background: rgba(231, 238, 238,0.2);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border: 1px solid black;
 margin-left:2%;
 margin-right: 2%;
 width:46%;
@@ -804,11 +834,11 @@ float: left;
 }
 
 #intro .persona2{
-border:0.5px;
 padding: 3%;
-box-shadow: 10px 10px #9ACAD0;
 height:100%;
-background: #E7EEEE;
+background: rgba(231, 238, 238,0.2);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border: 1px solid black;
 margin-right:2%;
 margin-left: 2%;
 width:46%;
@@ -844,7 +874,6 @@ padding-left: 10px;
 #intro .compare {
 margin-left: auto;
 margin-right: auto;
-width: 45%;
 height: 50%;
 text-align: left;
 margin-bottom: 2%;
@@ -856,8 +885,11 @@ height:50%;
 padding:15px;
 text-align: center;
 margin-left: 7%;
-border: 5px solid black;
-box-shadow: 10px 10px #9ACAD0;
+/* border: 5px solid black;
+box-shadow: 10px 10px #9ACAD0; */
+background: rgba(231, 238, 238,0.2);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border: 1px solid black;
 margin-bottom: 30px;
 width:25%;
 }
@@ -873,7 +905,7 @@ height:70px;
 }
 
 #intro .story {
-width: 45%;
+/* width: 45%; */
 height: 50%;
 text-align: left;
 margin-left: auto;
@@ -881,7 +913,7 @@ margin-right: auto;
 }
 
 #intro .flows {
-width: 45%;
+/* width: 45%; */
 height: 50%;
 text-align: left;
 margin-left: auto;
@@ -891,7 +923,7 @@ margin-bottom: 2%;
 
 #intro .column {
 float: left;
-width: 40%;
+/* width: 40%; */
 margin-left: 6%;
 margin-bottom: 30px;
 margin-right: auto;
@@ -918,7 +950,7 @@ height: 35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 15%;
+/* margin-left: 15%; */
 margin-top: 20px;
 margin-bottom: 15px;
 font-weight: bold;
@@ -934,26 +966,27 @@ float: center;
 .brand{
 margin-left: auto;
 margin-right: auto;
-width: 45%;
+/* width: 45%; */
 height: 50%;
 text-align: left;
-margin-bottom: 2%;
-margin-top: 1%;
+margin-bottom: 6%;
+margin-top: 6%;
+
 }
 
 #branding .logoo{
   margin-left: auto;
   margin-right: auto;
-  width: 45%;
-  height: 50%;
+  /* width: 45%; */
+  height: 60%;
   text-align: left;
-  margin-bottom: 2%;
-  margin-top: 1%;
+  margin-bottom: 4%;
+  margin-top: 3%;
 }
 
 #branding .column {
 float: left;
-width: 40%;
+/* width: 40%; */
 margin-left: 8%;
 margin-bottom: 1%;
 height: 450px;
@@ -961,15 +994,15 @@ height: 450px;
 }
 
 .logosketch{
-width:120%;
+/* width:120%; */
 /* height:440px; */
 height: 100%;
 }
 
 .logogp{
-  width: 90%;
+  /* width: 90%; */
 /* height:440px; */
-height: 99.9%;
+margin-left: 12%;
 }
 
 #branding .change{
@@ -979,7 +1012,7 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 15%;
+/* margin-left: 15%; */
 margin-top: 30px;
 font-weight: bold;
 margin-bottom: 15px;
@@ -988,11 +1021,11 @@ margin-bottom: 15px;
 #branding .palette {
 margin-left: auto;
 margin-right: auto;
-width: 45%;
+/* width: 45%; */
 height: 40%;
 text-align: left;
 margin-bottom: 2%;
-margin-top: 1%;
+margin-top:4%;
 }
 
 .col-palette{
@@ -1012,12 +1045,14 @@ margin-right: auto;
 #branding .fonts {
 margin-left: auto;
 margin-right: auto;
-width: 45%;
+/* width: 45%; */
 height: 500px;
 padding: 10px;
 text-align: left;
 /* border: 6px solid #73B9C2; */
-box-shadow: 8px 8px #9ACAD0;
+/* box-shadow: 8px 8px #9ACAD0; */
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border: 1px solid black;
 margin-bottom: 20px;
 }
 
@@ -1028,8 +1063,8 @@ margin-bottom: 20px;
 #testing .frames{
 margin-left: auto;
 margin-right: auto;
-margin-top: 10px;
-width: 45%;
+margin-top: 40px;
+/* width: 45%; */
 height: 80%;
 text-align: left;
 margin-bottom: 20px;
@@ -1057,7 +1092,7 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 15%;
+/* margin-left: 15%; */
 margin-top: 5px;
 font-weight: bold;
 }
@@ -1069,7 +1104,7 @@ height:35px;
 color:  #000000;
 text-align: center;
 background: #D7C39B;
-margin-left: 15%;
+margin-left: 19%;
 margin-top: 30px;
 font-weight: bold;
 }
@@ -1085,10 +1120,10 @@ margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  width: 45%;
+  /* width: 45%; */
   height: 50%;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 /* #testing .column {
 width: 40%;
@@ -1110,21 +1145,21 @@ width:30%;
 #testing .utest {
 margin-left: auto;
 margin-right: auto;
-margin-top: 10px;
-width: 45%;
+margin-top: 20px;
+/* width: 45%; */
 height: 60%;
 text-align: left;
-margin-bottom: 20px;
+margin-bottom:40px;
 }
 
 #testing .final {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  width: 45%;
+  margin-top: 20px;
+  /* width: 45%; */
   height: 30%;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #testing a{
@@ -1254,20 +1289,20 @@ text-align: center;
 #testing .end {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  width: 45%;
+  margin-top: 20px;
+  /* width: 45%; */
   height: 60%;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 #testing .lesson {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  width: 45%;
+  margin-top: 25px;
+  /* width: 45%; */
   height: 60%;
   text-align: left;
-  margin-bottom: 5%;
+  margin-bottom:70px;
 }
 
 /******************************//******************************/
@@ -1283,7 +1318,6 @@ text-align: center;
 margin-top: 5px;
 color: #3B7D7C;
 font-size: 35px;
-font-weight: bold;
 }
 
 #about h4{
@@ -1306,11 +1340,23 @@ margin: 0 auto;
 }
 
 #bio h5{
-  margin: 0 auto;
-  margin-top: 25px;
+  border: solid 1px #c48f48;
+  outline: solid 1px #c48f48;
+  outline-offset: -9px;
+  padding: 30px;
+  max-width: 530px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  margin: 30px auto 50px;
   width: 95%;
   text-align: left;
-  margin-bottom: 1%;
+}
+
+#bio p{
+  max-width: 680px;
+  margin: auto;
+  padding-bottom: 20px;
 }
 
 .book{
@@ -1319,11 +1365,12 @@ margin: 0 auto;
 width:40%;
 z-index: -1;
 display: block;
+margin-bottom: 40px;
 }
 
 .Arrow{
 right: 180px;
-top: 1400px;
+top: 1200px;
 z-index: -1;
 }
 
@@ -1331,8 +1378,9 @@ z-index: -1;
 width: 30%;
 z-index: -1;
 margin: 0 auto;
-margin-left: 3%;
+margin-left: 4%;
 padding-bottom: 2%;
+margin-bottom: 40px;
 }
 
 .bond{
@@ -1340,7 +1388,8 @@ z-index: -1;
 margin-left: 20%;
 margin: 0 auto;
 width:30%;
-margin-left: 3%;
+margin-left: 4%;
+margin-bottom: 40px;
 }
 
 .chemist{
@@ -1349,6 +1398,8 @@ margin-left: 50%;
 margin: 0 auto;
 width:40%;
 display: block;
+margin-bottom: 40px;
+margin-top: 30px;
 }
 
 .line{
@@ -1356,23 +1407,22 @@ z-index: -1;
 margin-left: 40%;
 margin: 0 auto;
 width:20%;
-padding-bottom: 13%;
+padding-bottom: 20%;
 margin-right: 3%;
-margin-left: 3%;
+margin-left: 6%;
 }
 /******************************//******************************/
 /******************//* for contact.html *//********************/
 /******************************//******************************/
 
 .say-hello h1{
-font-size: 28px;
+font-size: 4rem;
 margin-top: 30px;
 text-align: center;
 margin-top: 20px;
 color: #3B7D7C;
-font-size: 35px;
+/* font-size: 35px; */
 font-weight: bold;
-
 }
 
 .say-hello p{
@@ -1386,11 +1436,10 @@ text-decoration: none;
 color: #3B7D7C
 }
 
-.contactForm{
+.contactForm {
 width: 60%;
-height: 540px;
-margin-top: 30px;
-margin-left: 20%;
+max-width: 580px;
+margin: 30px auto 100px auto;
 border-radius: 5px;
 background-color: #f2f2f2;
 padding: 20px;
@@ -1399,7 +1448,7 @@ padding: 20px;
 input[type=text], select, textarea {
 width: 100%;
 padding: 12px;
-border: 1px solid #ccc;
+border: none;
 border-radius: 4px;
 box-sizing: border-box;
 margin-top: 6px;
@@ -1411,16 +1460,17 @@ font-size: 16px;
 input[type=submit] {
 background-color: #3B7D7C;
 color: white;
-padding: 12px 25px 12px 25px;
-width: 20%;
+padding: 12px 20px 12px 20px;
+width: 30%;
 border: none;
 border-radius: 20px;
 cursor: pointer;
-font-size: 16px;
+font-size: 17px;
 }
 
 input[type=submit]:hover {
-background-color: #73B9C2;
+color: #c48f40;
+background: #eddec8;
 }
 
 /***--------------------------------------------------***/
@@ -1440,19 +1490,25 @@ body {
   line-height: 1.5;
 }
 .bs-example li{
-padding: 0px;
+padding: 10px;
 margin-right: auto;
 margin-left: auto;
 float: right;
 }
 .navbar-brand{
-  width:auto;
+  padding: 20px 20px 20px 20px;
+  height:100px;
 }
-.nav li{
-  /* margin-top: 15px; */
-}
+
+.nav>li>a {
+   position: relative;
+   display: block;
+   padding-top: 25px;
+   /* margin-top: 15px; */
+ }
+
 .navbar-toggle{
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 /******************************/
@@ -1460,14 +1516,11 @@ float: right;
 /******************************/
 
 #name{
-  height:100%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  height:350px;
   width:100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 0;
-
+  display: flex;
 }
 
 #name .logo{
@@ -1476,13 +1529,12 @@ float: right;
 
 #name h1 h4 h5 .slogan {
   text-align: center;
-
 }
+
  #name h5{
   font-size: 24px;
-  margin-bottom: 3%;
-  padding-top: 15px;
 }
+
 #name h1{
   font-size: 38px;
   text-align: center;
@@ -1497,6 +1549,7 @@ h5 {
 #hide-sm {
   display: none;
 }
+
 /******************************/
 /* media query for project showcase */
 /******************************/
@@ -1542,7 +1595,6 @@ width:100%;
   padding-top: 10px;
   text-align: left;
   font-weight: bold;
-
 }
 
 #project h4{
@@ -1731,6 +1783,7 @@ width:100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
   }
 
   #project-name h1{
@@ -1874,7 +1927,7 @@ width:100%;
 
   #intro .change1{
     width: 200px;
-    margin-left: 6%;
+    margin-left: 2.5%;
     display: block;
     margin-right: auto;
     font-size: 17px;
@@ -1891,7 +1944,7 @@ width:100%;
 
   #intro .result-1{
     width:90%;
-    height:180px;
+    height:140px;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -2479,7 +2532,7 @@ width:100%;
   margin-right: auto;
   margin-left: auto;
   /* margin-bottom: -10px; */
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 #testing .lesson {
@@ -2489,8 +2542,8 @@ width:100%;
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 35px;
-    margin-top: 10px;
+  margin-bottom: 50px;
+    margin-top: 15px;
 }
 
 /******************************/
@@ -2536,7 +2589,7 @@ h5 {
 }
 
 #bio {
-  width: 90%;
+  width: 100%;
   height: 99%;
   padding: 0;
   float: none;
@@ -2556,9 +2609,8 @@ h5 {
 
 .line{
   transform: rotate(90deg);
-  float: center;
   display: block;
-  margin-left: auto;
+  margin-left: 35%;
   margin-right: auto;
   margin-top: 7%;
   margin-bottom: 7%;
@@ -2601,8 +2653,11 @@ h5 {
 }
 
 #bio p{
+  max-width: 80%;
   font-size: 15px;
-  margin-top: 1%;
+   margin-top: 1%;
+   margin: auto;
+   margin-bottom: 20px;
 }
 
 /******************************/
@@ -2616,13 +2671,15 @@ h5 {
   margin-left: auto;
   margin-right: auto;
 }
+.say-hello h1{
+  font-size: 32px;
+}
+
 
 .contactForm{
-  width: 80%;
+  width: 100%;
   float: none;
   display:block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 input[type=submit] {
