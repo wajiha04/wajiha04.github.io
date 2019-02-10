@@ -1346,6 +1346,7 @@ margin: 0 auto;
   margin: 0 auto;
   margin-top: 25px;
   width: 65%;
+  margin-bottom: 50px;
 }
 
 #bio h5{
@@ -1365,7 +1366,7 @@ margin: 0 auto;
 #bio p{
   max-width: 680px;
   margin: auto;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .book{
@@ -2602,9 +2603,11 @@ h5 {
 }
 
 #bio h5{
-  width:93%;
+  width:90%;
   margin-right: auto;
   margin-left: auto;
+  font-weight: normal;
+  margin: 30px auto 30px;
 }
 
 #bio {
@@ -2615,6 +2618,7 @@ h5 {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 30px;
 }
 
 .book{
@@ -2645,7 +2649,7 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   position: static;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .bond{
@@ -2668,7 +2672,7 @@ h5 {
   margin-right: auto;
   position: static;
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #bio p{
@@ -2676,7 +2680,7 @@ h5 {
   font-size: 15px;
    margin-top: 1%;
    margin: auto;
-   margin-bottom: 20px;
+   /* margin-bottom:5px; */
 }
 
 /******************************/
