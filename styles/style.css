@@ -208,18 +208,11 @@ background: #eddec8;
 /******************************/
 
 #project{
-  width: 85%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
   text-align: center;
 }
-
-/* #project .hvrbox{
-  margin-top: 4%;
- margin-bottom: 70px;
- width: 80%;
- text-align: center;
-} */
 
 .hvrbox {
 	position: relative;
@@ -366,19 +359,6 @@ margin: 0 auto;
   margin: 0 auto;
   text-align: center;
 }
-
-/* #project2 .hvrbox{
-  margin-top: 4%;
- margin-bottom: 90px;
- text-align: center;
-} */
-
-/* #project2 .jam{
-  height: 40%;
-  margin: 0 auto;
-  width: 100%;
-  height: 40%;
-} */
 
 #project2 h1 {
 text-align: center;
