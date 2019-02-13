@@ -174,7 +174,7 @@ margin-top: -10px;
 }
 
 #name h1{
-font-size:65px;
+font-size:72px;
 color: #414546;
 }
 
@@ -214,19 +214,107 @@ background: #eddec8;
   text-align: center;
 }
 
-#project .pro {
- margin-bottom: 20px;
- margin: 0 auto;
- width: 100%;
+/* #project .hvrbox{
+  margin-top: 4%;
+ margin-bottom: 70px;
+ width: 80%;
+ text-align: center;
+} */
+
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	/* overflow: hidden; */
+	max-width: 100%;
+	height: auto;
 }
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox_background {
+	width: 400px;
+	height: 250px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	/* background: rgba(0, 0, 0, 0.6);
+	color: #fff; */
+	background: #ECEDED;
+	/* color: #563A5F; */
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+.hvrbox .hvrbox-layer_image {
+	padding: 0;
+	background: none;
+}
+.hvrbox .hvrbox-layer_scale {
+	border-radius: 50%;
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+}
+.hvrbox:hover .hvrbox-layer_scale,
+.hvrbox.active .hvrbox-layer_scale {
+	border-radius: 0%;
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+/* Project showcase */
 
 #project h2{
 color: #414546;
-font-size: 30px;
+font-size: 32px;
 text-align: left;
-font-weight: 600;
-/* padding: 10px; */
-/* margin-left: 5%; */
+padding: 3px 10px 3px 0;
+line-height: 1.8;
+margin-bottom: 25px;
 }
 
 .button_1 {
@@ -250,7 +338,7 @@ font-weight: bold;
 
 #project h4{
 color: #414546;
-font-size: 20px;
+font-size: 24px;
 }
 
 #project p{
@@ -258,15 +346,13 @@ line-height: 28px;
 font-size: 20px;
 color: #414546;
 padding-top: 10px;
-/* padding-bottom: 15px; */
 font-weight: normal;
-text-align: left;
+text-align: center;
 }
 
 #project .box{
 width: 60%;
 height: 50%;
-/* padding: 3%; */
 margin: 0 auto;
 }
 
@@ -275,148 +361,60 @@ margin: 0 auto;
 }
 
 #project2{
-  width: 90%;
-  height: 900px;
+  width: 100%;
+  height: 640px;
   margin: 0 auto;
   text-align: center;
 }
 
-#project2 .pro {
+/* #project2 .hvrbox{
   margin-top: 4%;
- margin-bottom: 20px;
- width: 100%;
-}
+ margin-bottom: 90px;
+ text-align: center;
+} */
 
-#project2 .jam{
+/* #project2 .jam{
   height: 40%;
-  width: 60%;
   margin: 0 auto;
-  /* padding: 5%; */
-}
+  width: 100%;
+  height: 40%;
+} */
 
 #project2 h1 {
 text-align: center;
 color: #3B7D7C;
-font-size: 30px;
+font-size: 32px;
 font-weight: bold;
 }
+
 #project2 h4{
 color: #414546;
-font-size: 20px;
+font-size: 28px;
 }
+
 #project2 p{
 line-height: 28px;
 font-size: 20px;
 color: #414546;
 padding-top: 10px;
-/* padding-bottom: 20px; */
 font-weight: normal;
-text-align: left;
+text-align: center;
 }
+
 #blocjam{
-  margin-top: 4%;
-  width:80%;
-  height: 500px;
-}
-#demo{
-  width: 85%;
+  width: 80%;
+  margin-top: 60px;
+  margin-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
-  /* height:100%; */
-}
-/******************************/
-/* for design box */
-/******************************/
-
-#Design-box .box1{
-float: right;
-margin-top: 40px;
-border: 6px solid #414546;
-width: 45%;
-height: 270px;
-padding: 30px;
-font-size: 18px;
-margin-right: 10%;
 }
 
-#Design-box{
-height:400px;
-}
-
-.empathy {
-position: absolute;
-left: 250px;
-top: 1380px;
-z-index: -1;
-}
-
-.innovate{
-position: absolute;
-right: 330px;
-top: 1750px;
-z-index: -1;
-}
-
-#Design-box2{
-height:350px;
-}
-
-#Design-box2 .box2{
-float: left;
-margin-top: 30px;
-margin-bottom: 40px;
-border: 6px solid #414546;
-width: 45%;
-height: 290px;
-padding: 30px;
-text-align: left;
-margin-left: 10%;
-}
-
-#Design-box h2 {
-color: #414546;
-font-size: 30px;
-text-align: center;
-font-weight: bold;
-margin-top:19px;
-}
-
-#Design-box h3{
-font-size: 24px;
-font-weight: bold;
-color: #000000;
-}
-
-#Design-box .button_2 {
-background-color: #D7C39B;
-height: 45px;
-width: 250px;
-padding-left: 25px;
-padding-right: 25px;
-padding-top: 10px;
-border:0;
-font-size: 20px;
-font-weight: normal;
-}
-
-#Design-box2 .button_3{
-background-color: #D7C39B;
-height: 45px;
-width: 260px;
-padding-left: 25px;
-padding-right: 25px;
-padding-top: 10px;
-border:0;
-font-size: 20px;
-font-weight: normal;
-}
-
-#Design-box p{
-padding-top: 20px;
-}
-
-#Design-box2 p{
-padding-top: 20px;
+#demo{
+  width: 85%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /******************************/
@@ -424,7 +422,7 @@ padding-top: 20px;
 /******************************/
 
 footer {
-height: 270px;
+height: 250px;
 background-color: #1e4e4d;
 width: 100%;
 bottom: 0;
@@ -461,10 +459,11 @@ margin-left: 2%;
 hr{
 align:left;
 width:100%;
+margin-bottom: 5px;
 }
 
 p {
-font-size: 1.2rem;
+font-size: 1rem;
 /* padding-top: 5px; */
 }
 
@@ -523,11 +522,14 @@ text-decoration:none;
 #project-name {
 background-position: center  ;
 background-size:830px;
-/* padding-top: 5%; */
 height:100%;
 text-align: center;
 }
-
+#demo1 {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 #project-name h1{
 text-align: center;
 color: #3B7D7C;
@@ -556,13 +558,11 @@ border: 2px solid #73B9C2;
 width: 100%;
 max-width: 800px;
 height: 50%;
-/* background-color: #ffffff; */
 background: rgba(231, 238, 238,0.2);
 text-align: center;
 padding: 30px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 margin-top: 1%;
-
 }
 
 .prototype-button{
@@ -591,7 +591,6 @@ margin-left:8%;
 height: 180px;
 border: 1px solid black;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-/* background-color: #ffffff; */
 background: rgba(231, 238, 238,0.2);
 margin-top: 50px;
 }
@@ -604,7 +603,6 @@ margin-left:8%;
 height: 290px;
 border: 1px solid black;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-/* background-color: #ffffff; */
 background: rgba(231, 238, 238,0.2);
 }
 
@@ -809,7 +807,7 @@ margin-right: auto;
 
 #intro .person{
 margin-top: 10px;
-height:1200px;
+height:950px;
 text-align: left;
 margin-left: auto;
 margin-right: auto;
@@ -831,7 +829,7 @@ margin-right: auto;
 
 #intro .persona1{
 padding: 3%;
-height: 100%;
+/* height: 100%; */
 background: rgba(231, 238, 238,0.2);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border: 1px solid black;
@@ -843,7 +841,7 @@ float: left;
 
 #intro .persona2{
 padding: 3%;
-height:100%;
+/* height:100%; */
 background: rgba(231, 238, 238,0.2);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border: 1px solid black;
@@ -855,14 +853,14 @@ float: left;
 
 .anderson{
 width:100%;
-height:380px;
+/* height:380px; */
 margin-left: auto;
 margin-right: auto;
 }
 
 .monika{
 width:100%;
-height:380px;
+/* height:380px; */
 margin-left: auto;
 margin-right: auto;
 }
@@ -1073,7 +1071,7 @@ margin-bottom: 20px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 25px;
-/* width: 45%; */
+width: 55%;
 height: 80%;
 text-align: left;
 margin-bottom: 20px;
@@ -1129,7 +1127,7 @@ margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  /* width: 45%; */
+  width: 55%;
   height: 50%;
   text-align: left;
   margin-bottom: 40px;
@@ -1155,7 +1153,7 @@ width:30%;
 margin-left: auto;
 margin-right: auto;
 margin-top: 20px;
-/* width: 45%; */
+width: 55%;
 height: 60%;
 text-align: left;
 margin-bottom:40px;
@@ -1165,7 +1163,7 @@ margin-bottom:40px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  /* width: 45%; */
+  width: 55%;
   height: 30%;
   text-align: left;
   margin-bottom: 30px;
@@ -1212,11 +1210,14 @@ margin-bottom: 10px;
   height: 1150px;
   width: 1150px;
   padding: 1%;
-  margin-left: 5%;
   padding-top: 25px;
   padding-bottom: 0;
   /* position: relative; */
   margin-right: 5%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
   /* mobile-div */
@@ -1299,7 +1300,7 @@ text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  /* width: 45%; */
+  width: 55%;
   height: 70%;
   text-align: left;
   margin-bottom: 40px;
@@ -1308,10 +1309,10 @@ text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
-  /* width: 45%; */
+  width: 55%;
   height: 60%;
   text-align: left;
-  margin-bottom:70px;
+  margin-bottom:90px;
 }
 
 /******************************//******************************/
@@ -1326,7 +1327,7 @@ text-align: center;
 #about h1 {
 margin-top: 5px;
 color: #3B7D7C;
-font-size: 35px;
+font-size: 3.5rem;
 }
 
 #about h4{
@@ -1514,7 +1515,6 @@ float: right;
    position: relative;
    display: block;
    padding-top: 25px;
-   /* margin-top: 15px; */
  }
 
 .navbar-toggle{
@@ -1567,25 +1567,36 @@ h5 {
 #project {
   float: none;
   margin: 0 auto;
-  height: 80%;
   margin-bottom: 5%;
+  height:100%;
 }
-#project .pro{
+
+#project .hvrbox{
   display: block;
   margin:0 auto;
+  height:100%;
 }
-#demo{
-width:100%;
-}
-#blocjam{
-  width:90%;
-  height: 250px;
-}
-#project .box{
+
+#project .hvrbox-text{
   display: block;
   float: none;
   margin: 0 auto;
-  width: 100%;
+ width: 100%;
+}
+
+.hvrbox .hvrbox-layer_top {
+  background: #F5F2F2;
+}
+
+#demo{
+width:100%;
+margin-bottom: 40px;
+}
+
+#blocjam{
+  width:80%;
+  /* margin: 20px auto 40px auto; */
+  margin-bottom: 60px;
 }
 
 #background{
@@ -1601,11 +1612,11 @@ width:100%;
 }
 
 #project h2{
-  font-size: 28px;
+  font-size: 22px;
   padding-top: 10px;
   text-align: left;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 45px;
 }
 
 #project h4{
@@ -1624,8 +1635,8 @@ width:100%;
 #project2 {
   float: none;
   margin: 0 auto;
-  margin-bottom: 8%;
-  height: 20%;
+  height: 80%;
+  margin-bottom: 50px;
 }
 
 #project2 h4{
@@ -1637,17 +1648,24 @@ width:100%;
   font-size: 22px;
 }
 
-#project2 .jam{
+#project2 p{
+  font-size: 16px;
+  line-height: 23px;
+}
+
+#project2 .hvrbox{
+  display: block;
+  margin: 0 auto;
+  height:100%;
+}
+
+#project2 .hvrbox-text{
   display: block;
   float: none;
   margin: 0 auto;
   width: 90%;
 }
 
-#project2 p{
-  font-size: 16px;
-  line-height: 23px;
-}
 }
 
 /******************************/
@@ -1655,9 +1673,7 @@ width:100%;
 /******************************/
 
 @media(max-width:800px){
-#project h2{
-  font-size: 18px;
-}
+
 
   #Design-box h3{
     font-size: 18px;
@@ -2288,7 +2304,7 @@ width:100%;
 }
 
 #testing .frames{
-  width: 85%;
+  width: 70%;
   height: 30%;
   float: none;
   display: block;
@@ -2372,7 +2388,7 @@ width:100%;
 }
 
 #testing .test{
-  width: 85%;
+  width: 70%;
   height: 50%;
   float: none;
   display: block;
@@ -2381,7 +2397,7 @@ width:100%;
 }
 
 #testing .utest {
-  width: 85%;
+  width: 70%;
   height: 50%;
   float: none;
   display: block;
@@ -2390,7 +2406,7 @@ width:100%;
 }
 
 #testing .final {
-  width: 85%;
+  width: 70%;
   float: none;
   display: block;
   margin-right: auto;
@@ -2545,7 +2561,7 @@ width:100%;
 }
 
 #testing .end {
-  width: 85%;
+  width: 70%;
   height: 50%;
   float: none;
   display: block;
@@ -2556,14 +2572,14 @@ width:100%;
 }
 
 #testing .lesson {
-  width: 85%;
+  width: 70%;
   height: 50%;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 50px;
-    margin-top: 15px;
+  /* margin-bottom: 50px; */
+    margin-top:25px;
 }
 
 /******************************/
