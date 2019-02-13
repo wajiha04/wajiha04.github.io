@@ -402,7 +402,7 @@ text-align: center;
 }
 
 #blocjam{
-  width: 80%;
+  width: 90%;
   margin-top: 60px;
   margin-bottom: 20px;
   margin-right: auto;
@@ -443,8 +443,9 @@ padding-bottom: 1rem;
 }
 
 .contact-icons :hover{
-color:#3B7D7C;
+color:#D7C29B;
 transition: .5s;
+background: none;
 }
 
 .copyright {
@@ -936,14 +937,14 @@ margin-right: auto;
 }
 
 .login{
-/* width:100%; */
-height:450px;
+width:100%;
+/* height:450px; */
 }
 
 .organize{
 width:100%;
-height:450px;
-margin-left: 1%;
+/* height:450px; */
+/* margin-left: 1%; */
 }
 
 /******************************/
@@ -1173,7 +1174,9 @@ margin-bottom:40px;
 color: #ffffff;
 text-decoration: none;
 }
-
+#testing a:hover{
+color: #A78D48
+}
 .utest a {
 color: #3B7D7C;
 text-decoration: none;
@@ -1840,6 +1843,12 @@ margin-bottom: 40px;
     font-size: 16px;
     margin-top: 10px;
   }
+  #demo1 {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
   .prototype-button{
   margin-top: 18px;
   margin-bottom: 8px;
@@ -1908,7 +1917,7 @@ margin-bottom: 40px;
 
   #intro .problem {
     /* margin-left: 5%; */
-    width: 85%;
+    width: 90%;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -1917,7 +1926,7 @@ margin-bottom: 40px;
 
   #intro .solution {
     margin-left: 5%;
-    width: 85%;
+    width: 90%;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -1926,7 +1935,7 @@ margin-bottom: 40px;
 
   #intro .assumptions {
     margin-left: 5%;
-    width: 85%;
+    width: 90%;
     height: 80%;
     display: block;
     margin-right: auto;
@@ -1935,7 +1944,7 @@ margin-bottom: 40px;
 
   #intro .users {
     margin-left: 5%;
-    width: 85%;
+    width: 90%;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -2037,7 +2046,7 @@ margin-bottom: 40px;
 
   #intro .personas {
     margin-left: 5%;
-    width: 85%;
+    width: 90%;
     height:80%;
     display: block;
     margin-right: auto;
@@ -2129,7 +2138,7 @@ margin-bottom: 40px;
   width:80%;
 }
   #intro .story {
-    width: 85%;
+    width: 90%;
     height:55%;
     display: block;
     margin-right: auto;
@@ -2139,7 +2148,7 @@ margin-bottom: 40px;
   }
 
   #intro .flows {
-    width: 85%;
+    width: 90%;
     height:70%;
     display: block;
     margin-right: auto;
@@ -2155,7 +2164,6 @@ margin-bottom: 40px;
     margin-right: auto;
     margin-left: auto;
     float: none;
-    /* margin-top: -20px; */
   }
 
   .login{
@@ -2173,7 +2181,6 @@ margin-bottom: 40px;
 
 @media(max-width:800px){
 #branding h3{
-  /* margin-left: 5%; */
   padding-top: 6px;
 }
 
@@ -2190,7 +2197,7 @@ margin-bottom: 40px;
 
 .brand{
   font-size: 15px;
-  width: 85%;
+  width: 90%;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -2203,7 +2210,7 @@ margin-bottom: 40px;
 }
 
 #branding .logoo{
-  width: 85%;
+  width: 90%;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -2213,7 +2220,6 @@ margin-bottom: 40px;
 
 .logosketch{
   width:100%;
-  height: 75%;
   float: none;
   display: block;
   margin-right: auto;
@@ -2222,12 +2228,10 @@ margin-bottom: 40px;
 
 .logogp{
   width:100%;
-  height: 75%;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
-  /* margin-bottom: -10px; */
 }
 
 #branding .row{
@@ -2253,7 +2257,7 @@ margin-bottom: 40px;
 }
 
 #branding .palette {
-  width: 85%;
+  width: 90%;
   float: none;
   display: block;
   margin-right: auto;
@@ -2272,7 +2276,7 @@ margin-bottom: 40px;
   width: 150px;
   padding-top: 7px;
   height:36px;
-  margin-left: 7%;
+  margin-left: 5%;
 }
 #branding .fonts {
   width: 88%;
@@ -2304,7 +2308,7 @@ margin-bottom: 40px;
 }
 
 #testing .frames{
-  width: 70%;
+  width: 90%;
   height: 30%;
   float: none;
   display: block;
@@ -2388,7 +2392,7 @@ margin-bottom: 40px;
 }
 
 #testing .test{
-  width: 70%;
+  width: 90%;
   height: 50%;
   float: none;
   display: block;
@@ -2397,7 +2401,7 @@ margin-bottom: 40px;
 }
 
 #testing .utest {
-  width: 70%;
+  width: 90%;
   height: 50%;
   float: none;
   display: block;
@@ -2406,7 +2410,7 @@ margin-bottom: 40px;
 }
 
 #testing .final {
-  width: 70%;
+  width: 90%;
   float: none;
   display: block;
   margin-right: auto;
@@ -2561,25 +2565,23 @@ margin-bottom: 40px;
 }
 
 #testing .end {
-  width: 70%;
+  width: 85%;
   height: 50%;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
-  /* margin-bottom: -10px; */
   margin-top: 15px;
 }
 
 #testing .lesson {
-  width: 70%;
+  width: 85%;
   height: 50%;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
-  /* margin-bottom: 50px; */
-    margin-top:25px;
+  margin-top:25px;
 }
 
 /******************************/
