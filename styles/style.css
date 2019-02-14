@@ -2144,6 +2144,7 @@ margin-bottom: 10px;
 
   #intro .person{
     height: 70%;
+  margin-bottom: 20px;
   }
 
   .vl1{
@@ -2315,6 +2316,7 @@ margin-bottom: 10px;
   padding-top: 7px;
   height:36px;
   margin-left: 5%;
+  margin-top: 10px;
 }
 #branding .fonts {
   width: 88%;
@@ -2418,6 +2420,7 @@ margin-bottom: 10px;
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
 }
 
 .organize1{
