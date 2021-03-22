@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Wajiha Ahmed</title>
+  <title>Portfolio | Wajiha A</title>
   <link rel="shortcut icon" type="image/png" href="images/favicon.svg">
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
+  <!-- <link rel="bubbles" href="./js/bubble.js"> -->
   <script>
 
   // When the user scrolls down 20px from the top of the document, show the button
@@ -35,12 +36,14 @@
 </script>
 
 </head>
+
 <body id="background">
+
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <!-- navbar -->
   <header>
     <div class="bs-example">
-      <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
@@ -54,6 +57,21 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
+            <!-- new addition -->
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">WORK
+                 <i class="fa fa-caret-down"></i>
+                 </button>
+                <div class="dropdown-content">
+                  <a href="project.html">Healthy Portions</a>
+                  <a href="coursecubby.html">Course Cubby</a>
+                  <a href="https://www.directmd247.com/" target="-_blank">direct MD 24/7</a>
+                </div>
+               </div>
+            </li>
+
+            <!-- new addition -->
             <li><a href="about.html">About</a></li>
             <li><a href="./images/wajiha-resume.pdf" target="_blank">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -65,18 +83,43 @@
   </header>
   <!-- hero unit -->
   <main>
+<!-- new addition -->
+    <div class="hero">
+      <!-- new addition -->
     <section id="name" >
       <div class="container">
         <h1> Hi! I'm
-          <span style= "color:#BA9344; font-family: cursive;">  Wajiha </span><br>
+          <span style= "color:#BA9344; font-family: cursive;font-family: fantasy;">  Wajiha </span><br>
         </h1>
-        <h5 class="slogan" id= "intro">
-          A User Experience Designer </h5>
+        <h5 class="slogan" id= "intro">  <span class="realistic-marker-highlight"> A User Experience Designer </span>
+          <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+  <defs>
+    <filter id="marker-shape">
+      <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+    </filter>
+  </defs>
+</svg>
+          <!-- A User Experience Designer </h5> -->
+        </h5>
           <h4>
             based in San Francisco, Bay Area <br>
             I design user friendly digital experience.
           </h4>
-        </div>
+        <!-- </div>
+          </div> -->
+
+<div class="bubbles">
+<img src="images/bubble2.png" id="bubbles1" >
+<img src="images/bubble4.png" id="bubbles2">
+<img src="images/bubble3.png" id="bubbles3">
+<img src="images/bubble2.png" id="bubbles4">
+<img src="images/bubble1.png" id="bubbles5">
+<img src="images/bubble4.png" id="bubbles6">
+<img src="images/bubble3.png" id="bubbles7">
+</div>
+  </div>
+
       </section>
     </main>
     <!-- project showcase -->
@@ -93,7 +136,7 @@
               <p> Healthy Portions is the ultimate recipe manager and cloud storage platform to provide a user experience that fits the needs of users to organized their healthy inspirations.</p><br>
               <a href="project.html" class="button_1">View Case Study</a></div>
             </div>
-          </div>
+
 </section>
 <!-- for mobile-->
 <section>
@@ -148,8 +191,45 @@
           </div>
         </section>
 
+
+<!-- DirectMD -->
+<section id="project" style= "display:block">
+  <div class="conatiner">
+    <!-- <h2> <span  style= "color: #414546;"> My Featured Projects</span> </h2> -->
+    <div class="hvrbox">
+      <img src="images/dm.png" id="demo" class="hvrbox-layer_bottom">
+      <div class="hvrbox-layer_top hvrbox-layer_scale">
+        <div class="hvrbox-text">  <h1> Direct MD 24/7 </h1>
+          <h4>
+            <span  style= "color: #BA9344;"> User Experience Design </span><br>
+          </h4>
+          <p> Direct MD 24/7 offers telemedicine services on demand. Covid-19 has revolutionized how health professionals are able to provide care. My focus on this project was to be the architect and designer to provide a User Friendly Experience, which is Safe and Secure.</p><br>
+          <a href="https://www.directmd247.com/" target="-_blank" class="button_1">Check It Out</a></div>
+        </div>
+
+</section>
+<!-- <br>
+<br> -->
+<!-- for mobile-->
+<section>
+      <div class="container-fluid">
+      <div class="www" >
+        <img class="img-responsive" src="images/dm.png" id="demo" >
+          <div class="overlay red" <span style= "border: 3px solid #858E99;"> </span>
+            <h1> DirectMD 24/7 </h1>
+              <h4>
+                <span  style= "color: #BA9344;"> User Experience Design</span><br>
+              </h4>
+              <p> Direct MD 24/7 offers telemedicine services on demand. Covid-19 has revolutionized how health professionals are able to provide care. My focus on this project was to be the architect and designer to provide a User Friendly Experience, which is Safe and Secure.</p><br>
+              <a href="https://www.directmd247.com/" target="-_blank" class="button_1">Check It Out</a>
+          </div>
+      </div>
+      </div>
+    </section>
+
+
         <!-- blocjam -->
-        <section id="project2" style= "display:block">
+        <!-- <section id="project2" style= "display:block">
           <div class="conatiner">
 
             <div class="hvrbox">
@@ -164,10 +244,10 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
 
           <!-- for mobile-->
-          <section>
+          <!-- <section>
                     <div class="container-fluid">
                     <div class="www">
                       <img class="img-responsive" src="images/bloc.jpg" id="blocjam" >
@@ -181,10 +261,12 @@
                           </div>
                     </div>
                     </div>
-                  </section>
-
+                  </section> -->
+    <br>
+        <br>
           <!-- footer -->
-          <footer>
+          <footer
+
             <section class="footer">
               <div class="container">
                 <h2 class="diff"> Let's Connect!</h2>
@@ -215,10 +297,11 @@
                             </li>
                           </ul>
                           <hr>
-                          <p class="copyright"> &copy; 2019 | designed & developed by Wajiha A.</p>
+                          <p class="copyright"> &copy; 2021 | designed & developed by Wajiha A.</p>
                         </div>
                       </section>
                     </footer>
+
 
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
                     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
